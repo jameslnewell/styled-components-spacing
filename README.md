@@ -5,7 +5,7 @@ Responsive margin and padding components for `styled-components`.
 ## Installation
 
     npm install --save styled-components styled-components-spacing
-    
+
 ## Usage
 
 ### Using the default breakpoints and sizes
@@ -15,7 +15,7 @@ import React from 'react';
 import {Margin, Padding} from 'styled-components-spacing';
 
 <HeroPanel>
-  <Padding all={{mobile: 2, tablet: 4, desktop: 8}}>
+  <Padding all={{mobile: 2, tablet: 4, desktop: 6}}>
     <Title>Hello World</Title>
     <SubTitle>You're on earth!</SubTitle>
     <Margin right={1}>
@@ -79,43 +79,43 @@ const Panel = styled.div`
 
 #### all
 
-Margin on all sides. 
+Margin on all sides.
 
 Optional. A `string` or `number` specifying the spacing size. May be a keyed `object` specifying spacing sizes for multiple breakpoints.
 
 #### horizontal
 
-Margin on the left and right. 
+Margin on the left and right.
 
 Optional. A `string` or `number` specifying the spacing size. May be a keyed `object` specifying spacing sizes for multiple breakpoints.
 
 #### vertical
 
-Margin on the top and bottom. 
+Margin on the top and bottom.
 
 Optional. A `string` or `number` specifying the spacing size. May be a keyed `object` specifying spacing sizes for multiple breakpoints.
 
 #### top
 
-Margin on the top. 
+Margin on the top.
 
 Optional. A `string` or `number` specifying the spacing size. May be a keyed `object` specifying spacing sizes for multiple breakpoints.
 
 #### bottom
 
-Margin on the bottom. 
+Margin on the bottom.
 
 Optional. A `string` or `number` specifying the spacing size. May be a keyed `object` specifying spacing sizes for multiple breakpoints.
 
 #### left
 
-Margin on the left. 
+Margin on the left.
 
 Optional. A `string` or `number` specifying the spacing size. May be a keyed `object` specifying spacing sizes for multiple breakpoints.
 
 #### right
 
-Margin on the right. 
+Margin on the right.
 
 Optional. A `string` or `number` specifying the spacing size. May be a keyed `object` specifying spacing sizes for multiple breakpoints.
 
@@ -123,43 +123,43 @@ Optional. A `string` or `number` specifying the spacing size. May be a keyed `ob
 
 #### all
 
-Margin on all sides. 
+Margin on all sides.
 
 Optional. A `string` or `number` specifying the spacing size. May be a keyed `object` specifying spacing sizes for multiple breakpoints.
 
 #### horizontal
 
-Margin on the left and right. 
+Margin on the left and right.
 
 Optional. A `string` or `number` specifying the spacing size. May be a keyed `object` specifying spacing sizes for multiple breakpoints.
 
 #### vertical
 
-Margin on the top and bottom. 
+Margin on the top and bottom.
 
 Optional. A `string` or `number` specifying the spacing size. May be a keyed `object` specifying spacing sizes for multiple breakpoints.
 
 #### top
 
-Margin on the top. 
+Margin on the top.
 
 Optional. A `string` or `number` specifying the spacing size. May be a keyed `object` specifying spacing sizes for multiple breakpoints.
 
 #### bottom
 
-Margin on the bottom. 
+Margin on the bottom.
 
 Optional. A `string` or `number` specifying the spacing size. May be a keyed `object` specifying spacing sizes for multiple breakpoints.
 
 #### left
 
-Margin on the left. 
+Margin on the left.
 
 Optional. A `string` or `number` specifying the spacing size. May be a keyed `object` specifying spacing sizes for multiple breakpoints.
 
 #### right
 
-Margin on the right. 
+Margin on the right.
 
 Optional. A `string` or `number` specifying the spacing size. May be a keyed `object` specifying spacing sizes for multiple breakpoints.
 
