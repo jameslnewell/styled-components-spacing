@@ -37,6 +37,7 @@ export const ml = (size, theme) => map(size, s => `
 `, getBreakpointsFromTheme(theme));
 
 export const Margin = styled.div`
+  display: inline-block;
   ${({all, theme }) => m(all, theme)}
   ${({horizontal, theme }) => mx(horizontal, theme)} 
   ${({vertical, theme }) => my(vertical, theme)} 
