@@ -18,7 +18,7 @@ import {Margin, Padding} from 'styled-components-spacing';
   <Padding all={{mobile: 2, tablet: 4, desktop: 6}}>
     <Title>Hello World</Title>
     <SubTitle>You are on earth!</SubTitle>
-    <Margin right={1}>
+    <Margin top={1}>
       <Button>Blast off!</Button>
     </Margin>
   </Padding>
@@ -50,7 +50,7 @@ const theme = {
   <Padding all={{sm: 'a',  lg: 'b'}}>
     <Title>Hello World</Title>
     <SubTitle>You are on earth!</SubTitle>
-    <Margin right={'a'}>
+    <Margin top={'a'}>
       <Button>Blast off!</Button>
     </Margin>
   </Padding>
