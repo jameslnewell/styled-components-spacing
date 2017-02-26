@@ -17,7 +17,7 @@ import {Margin, Padding} from 'styled-components-spacing';
 <HeroPanel>
   <Padding all={{mobile: 2, tablet: 4, desktop: 6}}>
     <Title>Hello World</Title>
-    <SubTitle>You're on earth!</SubTitle>
+    <SubTitle>You are on earth!</SubTitle>
     <Margin right={1}>
       <Button>Blast off!</Button>
     </Margin>
@@ -49,7 +49,7 @@ const theme = {
 <HeroPanel>
   <Padding all={{sm: 'a',  lg: 'b'}}>
     <Title>Hello World</Title>
-    <SubTitle>You're on earth!</SubTitle>
+    <SubTitle>You are on earth!</SubTitle>
     <Margin right={'a'}>
       <Button>Blast off!</Button>
     </Margin>
