@@ -14,7 +14,7 @@ const html = renderToStaticMarkup(
     <Padding all={{mobile: 2, tablet: 4, desktop: 6}}>
       <Title>Hello World</Title>
       <SubTitle>You're on earth!</SubTitle>
-      <Margin right={1} inline>
+      <Margin top={1}>
         <Button>Blast off!</Button>
       </Margin>
     </Padding>
