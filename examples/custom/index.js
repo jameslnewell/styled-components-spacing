@@ -28,7 +28,7 @@ const html = renderToStaticMarkup(
       <Padding all={{sm: 'a',  lg: 'b'}}>
         <Title>Hello World</Title>
         <SubTitle>You're on earth!</SubTitle>
-        <Margin right={'a'}>
+        <Margin right={'a'} inline>
           <Button>Blast off!</Button>
         </Margin>
       </Padding>

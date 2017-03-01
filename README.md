@@ -18,7 +18,7 @@ import {Margin, Padding} from 'styled-components-spacing';
   <Padding all={{mobile: 2, tablet: 4, desktop: 6}}>
     <Title>Hello World</Title>
     <SubTitle>You are on earth!</SubTitle>
-    <Margin top={1}>
+    <Margin top={1} inline>
       <Button>Blast off!</Button>
     </Margin>
   </Padding>
@@ -308,6 +308,10 @@ Padding on the left.
 ```
 
 ## Change log
+
+#2.0.1
+
+- fix: usage example
 
 #2.0.0
 
