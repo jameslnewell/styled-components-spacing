@@ -50,7 +50,7 @@ const theme = {
   <Padding all={{sm: 'a',  lg: 'b'}}>
     <Title>Hello World</Title>
     <SubTitle>You are on earth!</SubTitle>
-    <Margin top={'a'}>
+    <Margin top={'a'} inline>
       <Button>Blast off!</Button>
     </Margin>
   </Padding>
@@ -119,6 +119,12 @@ Margin on the right.
 
 Optional. A `string` or `number` specifying the spacing size. May be a keyed `object` specifying spacing sizes for multiple breakpoints.
 
+#### inline
+
+Size the element to the width of its children.
+
+Optional. A `boolean`. Defaults to `false`.
+
 ### &lt;Padding/&gt;
 
 #### all
@@ -162,6 +168,12 @@ Optional. A `string` or `number` specifying the spacing size. May be a keyed `ob
 Margin on the right.
 
 Optional. A `string` or `number` specifying the spacing size. May be a keyed `object` specifying spacing sizes for multiple breakpoints.
+
+#### inline
+
+Size the element to the width of its children.
+
+Optional. A `boolean`. Defaults to `false`.
 
 ## Mixins
 
@@ -294,3 +306,10 @@ Padding on the left.
   6: '8rem'
 }
 ```
+
+## Change log
+
+#2.0.0
+
+- break: removed `display: inline-block;` from `<Margin/>` because an `inline-block` wrapping a `block` changes the width of the `block`. e.g. `<Margin><h1/></Margin>` meant the `h1` was unexpectedly not full width
+- addition: added a prop named `inline` to change `<Margin/>` and `<Padding/>` to from `block` to `inline-block`.

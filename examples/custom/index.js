@@ -15,6 +15,7 @@ const theme = {
   }
 };
 
+
 const HeroPanel = styled.div``;
 const Title = styled.h1``;
 const SubTitle = styled.h2``;

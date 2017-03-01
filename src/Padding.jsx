@@ -37,13 +37,14 @@ export const pl = (size, theme) => map(size, s => `
 `, getBreakpointsFromTheme(theme));
 
 export const Padding = styled.div`
-  ${({all, theme }) => p(all, theme)}
-  ${({horizontal, theme }) => px(horizontal, theme)} 
-  ${({vertical, theme }) => py(vertical, theme)} 
-  ${({top, theme }) => pt(top, theme)} 
-  ${({right, theme }) => pr(right, theme)} 
-  ${({bottom, theme }) => pb(bottom, theme)} 
-  ${({left, theme }) => pl(left, theme)} 
+  ${({inline}) => inline && 'display: inline-block;'}
+  ${({all, theme}) => p(all, theme)}
+  ${({horizontal, theme}) => px(horizontal, theme)} 
+  ${({vertical, theme}) => py(vertical, theme)} 
+  ${({top, theme}) => pt(top, theme)} 
+  ${({right, theme}) => pr(right, theme)} 
+  ${({bottom, theme}) => pb(bottom, theme)} 
+  ${({left, theme}) => pl(left, theme)} 
 `;
 
 Padding.propTypes = {
@@ -53,7 +54,8 @@ Padding.propTypes = {
   top: React.PropTypes.oneOfType([React.PropTypes.string, React.PropTypes.number, React.PropTypes.object]),
   right: React.PropTypes.oneOfType([React.PropTypes.string, React.PropTypes.number, React.PropTypes.object]),
   bottom: React.PropTypes.oneOfType([React.PropTypes.string, React.PropTypes.number, React.PropTypes.object]),
-  left: React.PropTypes.oneOfType([React.PropTypes.string, React.PropTypes.number, React.PropTypes.object])
+  left: React.PropTypes.oneOfType([React.PropTypes.string, React.PropTypes.number, React.PropTypes.object]),
+  inline: React.PropTypes.bool
 };
 
 export default Padding;

@@ -37,14 +37,14 @@ export const ml = (size, theme) => map(size, s => `
 `, getBreakpointsFromTheme(theme));
 
 export const Margin = styled.div`
-  display: inline-block;
-  ${({all, theme }) => m(all, theme)}
-  ${({horizontal, theme }) => mx(horizontal, theme)} 
-  ${({vertical, theme }) => my(vertical, theme)} 
-  ${({top, theme }) => mt(top, theme)} 
-  ${({right, theme }) => mr(right, theme)} 
-  ${({bottom, theme }) => mb(bottom, theme)} 
-  ${({left, theme }) => ml(left, theme)} 
+  ${({inline}) => inline && 'display: inline-block;'}
+  ${({all, theme}) => m(all, theme)}
+  ${({horizontal, theme}) => mx(horizontal, theme)} 
+  ${({vertical, theme}) => my(vertical, theme)} 
+  ${({top, theme}) => mt(top, theme)} 
+  ${({right, theme}) => mr(right, theme)} 
+  ${({bottom, theme}) => mb(bottom, theme)} 
+  ${({left, theme}) => ml(left, theme)} 
 `;
 
 Margin.propTypes = {
@@ -54,7 +54,8 @@ Margin.propTypes = {
   top: React.PropTypes.oneOfType([React.PropTypes.string, React.PropTypes.number, React.PropTypes.object]),
   right: React.PropTypes.oneOfType([React.PropTypes.string, React.PropTypes.number, React.PropTypes.object]),
   bottom: React.PropTypes.oneOfType([React.PropTypes.string, React.PropTypes.number, React.PropTypes.object]),
-  left: React.PropTypes.oneOfType([React.PropTypes.string, React.PropTypes.number, React.PropTypes.object])
+  left: React.PropTypes.oneOfType([React.PropTypes.string, React.PropTypes.number, React.PropTypes.object]),
+  inline: React.PropTypes.bool
 };
 
 export default Margin;
