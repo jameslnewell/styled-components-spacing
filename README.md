@@ -64,7 +64,7 @@ const theme = {
 ```js
 import React from 'react';
 import styled from 'styled-components';
-import {px} from 'styled-components-spacing';
+import {my, px} from 'styled-components-spacing';
 
 const Panel = styled.div`
   ${my({mobile: 2, tablet: 4})}
@@ -309,7 +309,7 @@ Padding on the left.
 
 ## Change log
 
-#2.0.1-2
+#2.0.1-3
 
 - fix: usage examples
 
