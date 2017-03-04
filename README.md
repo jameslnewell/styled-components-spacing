@@ -129,43 +129,43 @@ Optional. A `boolean`. Defaults to `false`.
 
 #### all
 
-Margin on all sides.
+Padding on all sides.
 
 Optional. A `string` or `number` specifying the spacing size. May be a keyed `object` specifying spacing sizes for multiple breakpoints.
 
 #### horizontal
 
-Margin on the left and right.
+Padding on the left and right.
 
 Optional. A `string` or `number` specifying the spacing size. May be a keyed `object` specifying spacing sizes for multiple breakpoints.
 
 #### vertical
 
-Margin on the top and bottom.
+Padding on the top and bottom.
 
 Optional. A `string` or `number` specifying the spacing size. May be a keyed `object` specifying spacing sizes for multiple breakpoints.
 
 #### top
 
-Margin on the top.
+Padding on the top.
 
 Optional. A `string` or `number` specifying the spacing size. May be a keyed `object` specifying spacing sizes for multiple breakpoints.
 
 #### bottom
 
-Margin on the bottom.
+Padding on the bottom.
 
 Optional. A `string` or `number` specifying the spacing size. May be a keyed `object` specifying spacing sizes for multiple breakpoints.
 
 #### left
 
-Margin on the left.
+Padding on the left.
 
 Optional. A `string` or `number` specifying the spacing size. May be a keyed `object` specifying spacing sizes for multiple breakpoints.
 
 #### right
 
-Margin on the right.
+Padding on the right.
 
 Optional. A `string` or `number` specifying the spacing size. May be a keyed `object` specifying spacing sizes for multiple breakpoints.
 
