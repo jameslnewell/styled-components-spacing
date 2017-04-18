@@ -1,6 +1,6 @@
 {
   "name": "styled-components-spacing",
-  "version": "2.0.3",
+  "version": "2.0.4",
   "description": "Responsive margin and padding components for `styled-components`.",
   "keywords": [
     "react",
@@ -18,6 +18,7 @@
     "styled-components": "^1 || ^2.0.0-3"
   },
   "dependencies": {
+    "prop-types": "^15.5.8",
     "styled-components-breakpoint": "^1.0.0-preview.3"
   },
   "devDependencies": {

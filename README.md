@@ -309,11 +309,14 @@ Padding on the left.
 
 ## Change log
 
-#2.0.1-3
+### 2.0.4
+- fix: Use `prop-types` to make warning with `react@15.5` go away
+
+### 2.0.1-3
 
 - fix: usage examples
 
-#2.0.0
+### 2.0.0
 
 - break: removed `display: inline-block;` from `<Margin/>` because an `inline-block` wrapping a `block` changes the width of the `block`. e.g. `<Margin><h1/></Margin>` meant the `h1` was unexpectedly not full width
 - addition: added a prop named `inline` to change `<Margin/>` and `<Padding/>` to from `block` to `inline-block`.

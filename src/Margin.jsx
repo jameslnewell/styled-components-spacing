@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import {map} from 'styled-components-breakpoint';
 import sizes from './sizes';
@@ -48,14 +49,14 @@ export const Margin = styled.div`
 `;
 
 Margin.propTypes = {
-  all: React.PropTypes.oneOfType([React.PropTypes.string, React.PropTypes.number, React.PropTypes.object]),
-  horizontal: React.PropTypes.oneOfType([React.PropTypes.string, React.PropTypes.number, React.PropTypes.object]),
-  vertical: React.PropTypes.oneOfType([React.PropTypes.string, React.PropTypes.number, React.PropTypes.object]),
-  top: React.PropTypes.oneOfType([React.PropTypes.string, React.PropTypes.number, React.PropTypes.object]),
-  right: React.PropTypes.oneOfType([React.PropTypes.string, React.PropTypes.number, React.PropTypes.object]),
-  bottom: React.PropTypes.oneOfType([React.PropTypes.string, React.PropTypes.number, React.PropTypes.object]),
-  left: React.PropTypes.oneOfType([React.PropTypes.string, React.PropTypes.number, React.PropTypes.object]),
-  inline: React.PropTypes.bool
+  all: PropTypes.oneOfType([PropTypes.string, PropTypes.number, PropTypes.object]),
+  horizontal: PropTypes.oneOfType([PropTypes.string, PropTypes.number, PropTypes.object]),
+  vertical: PropTypes.oneOfType([PropTypes.string, PropTypes.number, PropTypes.object]),
+  top: PropTypes.oneOfType([PropTypes.string, PropTypes.number, PropTypes.object]),
+  right: PropTypes.oneOfType([PropTypes.string, PropTypes.number, PropTypes.object]),
+  bottom: PropTypes.oneOfType([PropTypes.string, PropTypes.number, PropTypes.object]),
+  left: PropTypes.oneOfType([PropTypes.string, PropTypes.number, PropTypes.object]),
+  inline: PropTypes.bool
 };
 
 export default Margin;
