@@ -1212,6 +1212,10 @@ kind-of@^3.0.2:
   dependencies:
     is-buffer "^1.0.2"
 
+lodash.omit@^4.5.0:
+  version "4.5.0"
+  resolved "https://registry.yarnpkg.com/lodash.omit/-/lodash.omit-4.5.0.tgz#6eb19ae5a1ee1dd9df0b969e66ce0b7fa30b5e60"
+
 lodash@^4.2.0:
   version "4.17.4"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.4.tgz#78203a4d1c328ae1d86dca6460e369b57f4055ae"
@@ -1438,6 +1442,13 @@ rc@^1.1.7:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
+react-create-component-from-tag-prop@^1.2.1:
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/react-create-component-from-tag-prop/-/react-create-component-from-tag-prop-1.2.1.tgz#d93c304b279a3160e6eca3b8e3a2348bdca11a59"
+  dependencies:
+    lodash.omit "^4.5.0"
+    react "^15.5.4"
+
 react-dom@^15.4.2:
   version "15.5.4"
   resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-15.5.4.tgz#ba0c28786fd52ed7e4f2135fe0288d462aef93da"
@@ -1447,7 +1458,7 @@ react-dom@^15.4.2:
     object-assign "^4.1.0"
     prop-types "~15.5.7"
 
-react@^15.4.2:
+react@^15.4.2, react@^15.5.4:
   version "15.5.4"
   resolved "https://registry.yarnpkg.com/react/-/react-15.5.4.tgz#fa83eb01506ab237cdc1c8c3b1cea8de012bf047"
   dependencies:

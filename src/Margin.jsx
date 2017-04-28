@@ -2,7 +2,14 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import {map} from 'styled-components-breakpoint';
+import createComponentFromTagProp from 'react-create-component-from-tag-prop';
 import sizes from './sizes';
+
+const MarginComponent = createComponentFromTagProp({
+  tag: 'div',
+  prop: 'component',
+  propsToOmit: ['inline', 'all', 'horizontal', 'vertical', 'top', 'right', 'bottom', 'left']
+})
 
 const getSizeFromTheme = (theme, size) => theme && theme.spacing && theme.spacing[size] || sizes[size]; //TODO: in dev, throw an error if size doesn't exist
 const getBreakpointsFromTheme = theme => theme && theme.breakpoints;
@@ -37,7 +44,7 @@ export const ml = (size, theme) => map(size, s => `
   margin-left: ${getSizeFromTheme(theme, s)};
 `, getBreakpointsFromTheme(theme));
 
-export const Margin = styled.div`
+export const Margin = styled(MarginComponent)`
   ${({inline}) => inline && 'display: inline-block;'}
   ${({all, theme}) => m(all, theme)}
   ${({horizontal, theme}) => mx(horizontal, theme)} 

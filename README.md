@@ -125,6 +125,12 @@ Size the element to the width of its children.
 
 Optional. A `boolean`. Defaults to `false`.
 
+#### component
+
+The component to render the styles on.
+
+Optional. A `string` or valid React component. Defaults to `div`.
+
 ### &lt;Padding/&gt;
 
 #### all
@@ -174,6 +180,12 @@ Optional. A `string` or `number` specifying the spacing size. May be a keyed `ob
 Size the element to the width of its children.
 
 Optional. A `boolean`. Defaults to `false`.
+
+#### component
+
+The component to render the styles on.
+
+Optional. A `string` or valid React component. Defaults to `div`.
 
 ## Mixins
 
@@ -309,7 +321,12 @@ Padding on the left.
 
 ## Change log
 
+### 2.1.0
+
+- add: added a `component` prop to customise the underlying element type
+
 ### 2.0.4
+
 - fix: Use `prop-types` to make warning with `react@15.5` go away
 
 ### 2.0.1-3

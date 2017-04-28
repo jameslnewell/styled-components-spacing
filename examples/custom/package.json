@@ -7,6 +7,7 @@
     "styled-components": "^2.0.0-3"
   },
   "dependencies": {
+    "react-create-component-from-tag-prop": "^1.2.0",
     "styled-components-spacing": "file:../.."
   },
   "devDependencies": {
