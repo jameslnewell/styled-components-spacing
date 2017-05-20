@@ -1,13 +1,16 @@
 {
   "name": "styled-components-spacing",
-  "version": "2.1.0",
-  "description": "Responsive margin and padding components for `styled-components`.",
+  "version": "2.1.1",
+  "description": "Responsive margin and padding components for `styled-components`💅.",
   "keywords": [
     "react",
     "styled-components",
-    "grid",
     "responsive",
-    "style"
+    "style",
+    "spacing",
+    "margin",
+    "breakpoint",
+    "grid"
   ],
   "repository": "jameslnewell/styled-components-spacing",
   "main": "dist/index.js",

@@ -1,6 +1,6 @@
 # styled-components-spacing
 
-Responsive margin and padding components for `styled-components`.
+Responsive margin and padding components for `styled-components` 💅.
 
 ## Installation
 
@@ -28,6 +28,8 @@ import {Margin, Padding} from 'styled-components-spacing';
 
 ### Using custom breakpoints and sizes
 
+You can customise the provided breakpoint names and values. If you would like to use the same breakpoints as [Bootstrap](https://v4-alpha.getbootstrap.com/layout/overview/#responsive-breakpoints), you can do so like this:
+
 ```js
 import React from 'react';
 import {ThemeProvider} from 'styled-components';
@@ -35,9 +37,11 @@ import {Margin, Padding} from 'styled-components-spacing';
 
 const theme = {
   breakpoints: {
-    sm: 0,
-    md: 800,
-    lg: 1200
+    xs: 0,
+    sm: 576,
+    md: 768,
+    lg: 992,
+    xl: 1200
   },
   spacing: {
     a: '25px',
@@ -320,6 +324,10 @@ Padding on the left.
 ```
 
 ## Change log
+
+### 2.1.1
+
+- fix: updated the documentation
 
 ### 2.1.0
 
