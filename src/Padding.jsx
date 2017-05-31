@@ -13,34 +13,35 @@ const PaddingComponent = createComponentFromTagProp({
 
 const getSizeFromTheme = (theme, size) => theme && theme.spacing && theme.spacing[size] || sizes[size]; //TODO: in dev, throw an error if size doesn't exist
 const getBreakpointsFromTheme = theme => theme && theme.breakpoints;
+const isNotUndefined = value => typeof value !== 'undefined';
 
-export const p = (size, theme) => map(size, s => `
+export const p = (size, theme) => map(size, s => isNotUndefined(s) && `
   padding: ${getSizeFromTheme(theme, s)};
 `, getBreakpointsFromTheme(theme));
 
-export const px = (size, theme) => map(size, s => `
+export const px = (size, theme) => map(size, s => isNotUndefined(s) && `
   padding-left: ${getSizeFromTheme(theme, s)};
   padding-right: ${getSizeFromTheme(theme, s)};
 `, getBreakpointsFromTheme(theme));
 
-export const py = (size, theme) => map(size, s => `
+export const py = (size, theme) => map(size, s => isNotUndefined(s) && `
   padding-top: ${getSizeFromTheme(theme, s)};
   padding-bottom: ${getSizeFromTheme(theme, s)};
 `, getBreakpointsFromTheme(theme));
 
-export const pt = (size, theme) => map(size, s => `
+export const pt = (size, theme) => map(size, s => isNotUndefined(s) && `
   padding-top: ${getSizeFromTheme(theme, s)};
 `, getBreakpointsFromTheme(theme));
 
-export const pr = (size, theme) => map(size, s => `
+export const pr = (size, theme) => map(size, s => isNotUndefined(s) && `
   padding-right: ${getSizeFromTheme(theme, s)};
 `, getBreakpointsFromTheme(theme));
 
-export const pb = (size, theme) => map(size, s => `
+export const pb = (size, theme) => map(size, s => isNotUndefined(s) && `
   padding-bottom: ${getSizeFromTheme(theme, s)};
 `, getBreakpointsFromTheme(theme));
 
-export const pl = (size, theme) => map(size, s => `
+export const pl = (size, theme) => map(size, s => isNotUndefined(s) && `
   padding-left: ${getSizeFromTheme(theme, s)};
 `, getBreakpointsFromTheme(theme));
 

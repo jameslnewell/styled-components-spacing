@@ -13,34 +13,35 @@ const MarginComponent = createComponentFromTagProp({
 
 const getSizeFromTheme = (theme, size) => theme && theme.spacing && theme.spacing[size] || sizes[size]; //TODO: in dev, throw an error if size doesn't exist
 const getBreakpointsFromTheme = theme => theme && theme.breakpoints;
+const isNotUndefined = value => typeof value !== 'undefined';
 
-export const m = (size, theme) => map(size, s => `
+export const m = (size, theme) => map(size, s => isNotUndefined(s) && `
   margin: ${getSizeFromTheme(theme, s)};
 `, getBreakpointsFromTheme(theme));
 
-export const mx = (size, theme) => map(size, s => `
+export const mx = (size, theme) => map(size, s => isNotUndefined(s) && `
   margin-left: ${getSizeFromTheme(theme, s)};
   margin-right: ${getSizeFromTheme(theme, s)};
 `, getBreakpointsFromTheme(theme));
 
-export const my = (size, theme) => map(size, s => `
+export const my = (size, theme) => map(size, s => isNotUndefined(s) && `
   margin-top: ${getSizeFromTheme(theme, s)};
   margin-bottom: ${getSizeFromTheme(theme, s)};
 `, getBreakpointsFromTheme(theme));
 
-export const mt = (size, theme) => map(size, s => `
+export const mt = (size, theme) => map(size, s => isNotUndefined(s) && `
   margin-top: ${getSizeFromTheme(theme, s)};
 `, getBreakpointsFromTheme(theme));
 
-export const mr = (size, theme) => map(size, s => `
+export const mr = (size, theme) => map(size, s => isNotUndefined(s) && `
   margin-right: ${getSizeFromTheme(theme, s)};
 `, getBreakpointsFromTheme(theme));
 
-export const mb = (size, theme) => map(size, s => `
+export const mb = (size, theme) => map(size, s => isNotUndefined(s) && `
   margin-bottom: ${getSizeFromTheme(theme, s)};
 `, getBreakpointsFromTheme(theme));
 
-export const ml = (size, theme) => map(size, s => `
+export const ml = (size, theme) => map(size, s => isNotUndefined(s) && `
   margin-left: ${getSizeFromTheme(theme, s)};
 `, getBreakpointsFromTheme(theme));
 

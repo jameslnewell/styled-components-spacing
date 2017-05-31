@@ -325,6 +325,10 @@ Padding on the left.
 
 ## Change log
 
+### 2.1.2
+
+- fix: remove undefined margin values
+
 ### 2.1.1
 
 - fix: updated the documentation
