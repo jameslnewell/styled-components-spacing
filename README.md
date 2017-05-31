@@ -325,6 +325,10 @@ Padding on the left.
 
 ## Change log
 
+### 2.1.3
+
+- fix: not used to a new IDE which doesn't auto save
+
 ### 2.1.2
 
 - fix: remove undefined margin values
