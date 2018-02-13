@@ -85,6 +85,23 @@ const Panel = styled.div`
 `;
 ```
 
+### Using the mixins with custom breakpoints and sizes
+
+You must pass a `theme` object as the second parameter to the mixins with breakpoints and spacing sizes defined.
+
+```js
+import React from 'react';
+import styled from 'styled-components';
+import {my, px} from 'styled-components-spacing';
+import theme from './theme'
+
+const Panel = styled.div`
+  ${my({mobile: 2, tablet: 4}, theme)}
+  ${px(6, theme)}
+`;
+
+```
+
 ## Components
 
 ### &lt;Margin/&gt;
