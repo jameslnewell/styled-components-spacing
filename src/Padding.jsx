@@ -1,5 +1,4 @@
 // @flow
-import React from 'react';
 import styled from 'styled-components';
 import { type Theme, type Values, _p, _px, _py, _pt, _pr, _pb, _pl } from './core';
 

@@ -1,4 +1,5 @@
 // @flow
+/* global process */
 import { map } from 'styled-components-breakpoint';
 
 export type Theme = {

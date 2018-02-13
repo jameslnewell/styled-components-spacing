@@ -1,5 +1,4 @@
 // @flow
-/* global process */
 import * as React from 'react';
 import styled, { injectGlobal, ThemeProvider } from 'styled-components';
 import breakpoint, { createStatic } from 'styled-components-breakpoint';
