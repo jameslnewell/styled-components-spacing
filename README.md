@@ -65,7 +65,7 @@ const theme = {
     <Padding all={{ sm: 1, lg: 2 }}>
       <Title>Hello World</Title>
       <SubTitle>You are on earth!</SubTitle>
-      <Margin top={'a'}>
+      <Margin top={1}>
         <Button>Blast off!</Button>
       </Margin>
     </Padding>
