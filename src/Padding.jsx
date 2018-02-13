@@ -1,70 +1,59 @@
+// @flow
 import React from 'react';
-import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import {map} from 'styled-components-breakpoint';
-import createComponentFromTagProp from 'react-create-component-from-tag-prop';
-import sizes from './sizes';
+import { type Theme, type Values, _p, _px, _py, _pt, _pr, _pb, _pl } from './core';
 
-const PaddingComponent = createComponentFromTagProp({
-  tag: 'div',
-  prop: 'component',
-  propsToOmit: ['inline', 'all', 'horizontal', 'vertical', 'top', 'right', 'bottom', 'left']
-})
+export function p(values: Values) {
+  return function({ theme }: { theme: Theme }) {
+    return _p(values, theme);
+  };
+}
 
-const getSizeFromTheme = (theme, size) => theme && theme.spacing && theme.spacing[size] || sizes[size]; //TODO: in dev, throw an error if size doesn't exist
-const getBreakpointsFromTheme = theme => theme && theme.breakpoints;
-const isNotUndefined = value => typeof value !== 'undefined';
+export function px(values: Values) {
+  return function({ theme }: { theme: Theme }) {
+    return _px(values, theme);
+  };
+}
 
-export const p = (size, theme) => map(size, s => isNotUndefined(s) && `
-  padding: ${getSizeFromTheme(theme, s)};
-`, getBreakpointsFromTheme(theme));
+export function py(values: Values) {
+  return function({ theme }: { theme: Theme }) {
+    return _py(values, theme);
+  };
+}
 
-export const px = (size, theme) => map(size, s => isNotUndefined(s) && `
-  padding-left: ${getSizeFromTheme(theme, s)};
-  padding-right: ${getSizeFromTheme(theme, s)};
-`, getBreakpointsFromTheme(theme));
+export function pt(values: Values) {
+  return function({ theme }: { theme: Theme }) {
+    return _pt(values, theme);
+  };
+}
 
-export const py = (size, theme) => map(size, s => isNotUndefined(s) && `
-  padding-top: ${getSizeFromTheme(theme, s)};
-  padding-bottom: ${getSizeFromTheme(theme, s)};
-`, getBreakpointsFromTheme(theme));
+export function pr(values: Values) {
+  return function({ theme }: { theme: Theme }) {
+    return _pr(values, theme);
+  };
+}
 
-export const pt = (size, theme) => map(size, s => isNotUndefined(s) && `
-  padding-top: ${getSizeFromTheme(theme, s)};
-`, getBreakpointsFromTheme(theme));
+export function pb(values: Values) {
+  return function({ theme }: { theme: Theme }) {
+    return _pb(values, theme);
+  };
+}
 
-export const pr = (size, theme) => map(size, s => isNotUndefined(s) && `
-  padding-right: ${getSizeFromTheme(theme, s)};
-`, getBreakpointsFromTheme(theme));
+export function pl(values: Values) {
+  return function({ theme }: { theme: Theme }) {
+    return _pl(values, theme);
+  };
+}
 
-export const pb = (size, theme) => map(size, s => isNotUndefined(s) && `
-  padding-bottom: ${getSizeFromTheme(theme, s)};
-`, getBreakpointsFromTheme(theme));
-
-export const pl = (size, theme) => map(size, s => isNotUndefined(s) && `
-  padding-left: ${getSizeFromTheme(theme, s)};
-`, getBreakpointsFromTheme(theme));
-
-export const Padding = styled(PaddingComponent)`
-  ${({inline}) => inline && 'display: inline-block;'}
-  ${({all, theme}) => p(all, theme)}
-  ${({horizontal, theme}) => px(horizontal, theme)} 
-  ${({vertical, theme}) => py(vertical, theme)} 
-  ${({top, theme}) => pt(top, theme)} 
-  ${({right, theme}) => pr(right, theme)} 
-  ${({bottom, theme}) => pb(bottom, theme)} 
-  ${({left, theme}) => pl(left, theme)} 
+export const Padding = styled.div`
+  ${({ inline }) => inline && 'display: inline-block;'}
+  ${({ all, theme }) => _p(all, theme)}
+  ${({ horizontal, theme }) => _px(horizontal, theme)} 
+  ${({ vertical, theme }) => _py(vertical, theme)} 
+  ${({ top, theme }) => _pt(top, theme)} 
+  ${({ right, theme }) => _pr(right, theme)} 
+  ${({ bottom, theme }) => _pb(bottom, theme)} 
+  ${({ left, theme }) => _pl(left, theme)} 
 `;
-
-Padding.propTypes = {
-  all: PropTypes.oneOfType([PropTypes.string, PropTypes.number, PropTypes.object]),
-  horizontal: PropTypes.oneOfType([PropTypes.string, PropTypes.number, PropTypes.object]),
-  vertical: PropTypes.oneOfType([PropTypes.string, PropTypes.number, PropTypes.object]),
-  top: PropTypes.oneOfType([PropTypes.string, PropTypes.number, PropTypes.object]),
-  right: PropTypes.oneOfType([PropTypes.string, PropTypes.number, PropTypes.object]),
-  bottom: PropTypes.oneOfType([PropTypes.string, PropTypes.number, PropTypes.object]),
-  left: PropTypes.oneOfType([PropTypes.string, PropTypes.number, PropTypes.object]),
-  inline: PropTypes.bool
-};
 
 export default Padding;

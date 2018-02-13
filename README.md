@@ -1,6 +1,12 @@
 # styled-components-spacing
 
+[![Build Status](https://travis-ci.org/jameslnewell/styled-components-spacing.svg?branch=master)](https://travis-ci.org/jameslnewell/styled-components-spacing)
+
 Responsive margin and padding components for `styled-components` 💅.
+
+> [Change log](https://github.com/jameslnewell/styled-components-spacing/blob/master/CHANGELOG.md)
+
+> Have a look 👀 at [`styled-components-breakpoint`](https://github.com/jameslnewell/styled-components-breakpoint) and [`styled-components-grid`](https://github.com/jameslnewell/styled-components-grid) which work well with this package.
 
 ## Installation
 
@@ -8,32 +14,33 @@ Responsive margin and padding components for `styled-components` 💅.
 
 ## Usage
 
-### Using the default breakpoints and sizes
+> [Examples](https://jameslnewell.github.io/styled-components-spacing/)
+
+### Using the default spacings at the default breakpoints
 
 ```js
 import React from 'react';
-import {Margin, Padding} from 'styled-components-spacing';
+import { Margin, Padding } from 'styled-components-spacing';
 
 <HeroPanel>
-  <Padding all={{mobile: 2, tablet: 4, desktop: 6}}>
+  <Padding all={{ mobile: 2, tablet: 4, desktop: 6 }}>
     <Title>Hello World</Title>
     <SubTitle>You are on earth!</SubTitle>
     <Margin top={1}>
       <Button>Blast off!</Button>
     </Margin>
   </Padding>
-</HeroPanel>
-
+</HeroPanel>;
 ```
 
-### Using custom breakpoints and sizes
+### Using custom spacings at custom breakpoints
 
-You can customise the provided breakpoint names and values. If you would like to use the same breakpoints as [Bootstrap](https://v4-alpha.getbootstrap.com/layout/overview/#responsive-breakpoints), you can do so like this:
+Spacings and breakpoints can be customised using `ThemeProvider`. For example, to use the same breakpoints and spacings as [Bootstrap](https://getbootstrap.com/docs/4.0/layout/overview/#responsive-breakpoints), you can do so like this:
 
 ```js
 import React from 'react';
-import {ThemeProvider} from 'styled-components';
-import {Margin, Padding} from 'styled-components-spacing';
+import { ThemeProvider } from 'styled-components';
+import { Margin, Padding } from 'styled-components-spacing';
 
 const theme = {
   breakpoints: {
@@ -44,23 +51,26 @@ const theme = {
     xl: 1200
   },
   spacing: {
-    a: '25px',
-    b: '50px',
+    0: '0',
+    1: '0.25rem',
+    2: '0.5rem',
+    3: '1rem',
+    4: '1.5rem',
+    5: '3rem'
   }
 };
 
 <ThemeProvider theme={theme}>
-<HeroPanel>
-  <Padding all={{sm: 'a',  lg: 'b'}}>
-    <Title>Hello World</Title>
-    <SubTitle>You are on earth!</SubTitle>
-    <Margin top={'a'}>
-      <Button>Blast off!</Button>
-    </Margin>
-  </Padding>
-</HeroPanel>
-</ThemeProvider>
-
+  <HeroPanel>
+    <Padding all={{ sm: 1, lg: 2 }}>
+      <Title>Hello World</Title>
+      <SubTitle>You are on earth!</SubTitle>
+      <Margin top={'a'}>
+        <Button>Blast off!</Button>
+      </Margin>
+    </Padding>
+  </HeroPanel>
+</ThemeProvider>;
 ```
 
 ### Using the mixins
@@ -68,13 +78,11 @@ const theme = {
 ```js
 import React from 'react';
 import styled from 'styled-components';
-import {my, px} from 'styled-components-spacing';
+import { my, px } from 'styled-components-spacing';
 
 const Panel = styled.div`
-  ${my({mobile: 2, tablet: 4})}
-  ${px(6)}
+  ${my({ mobile: 2, tablet: 4 })} ${px(6)};
 `;
-
 ```
 
 ## Components
@@ -85,43 +93,43 @@ const Panel = styled.div`
 
 Margin on all sides.
 
-Optional. A `string` or `number` specifying the spacing size. May be a keyed `object` specifying spacing sizes for multiple breakpoints.
+Optional. A `string` or `number` specifying the spacing key. May be a keyed `object` specifying spacing keys for multiple breakpoints.
 
 #### horizontal
 
 Margin on the left and right.
 
-Optional. A `string` or `number` specifying the spacing size. May be a keyed `object` specifying spacing sizes for multiple breakpoints.
+Optional. A `string` or `number` specifying the spacing key. May be a keyed `object` specifying spacing keys for multiple breakpoints.
 
 #### vertical
 
 Margin on the top and bottom.
 
-Optional. A `string` or `number` specifying the spacing size. May be a keyed `object` specifying spacing sizes for multiple breakpoints.
+Optional. A `string` or `number` specifying the spacing key. May be a keyed `object` specifying spacing keys for multiple breakpoints.
 
 #### top
 
 Margin on the top.
 
-Optional. A `string` or `number` specifying the spacing size. May be a keyed `object` specifying spacing sizes for multiple breakpoints.
+Optional. A `string` or `number` specifying the spacing key. May be a keyed `object` specifying spacing keys for multiple breakpoints.
 
 #### bottom
 
 Margin on the bottom.
 
-Optional. A `string` or `number` specifying the spacing size. May be a keyed `object` specifying spacing sizes for multiple breakpoints.
+Optional. A `string` or `number` specifying the spacing key. May be a keyed `object` specifying spacing keys for multiple breakpoints.
 
 #### left
 
 Margin on the left.
 
-Optional. A `string` or `number` specifying the spacing size. May be a keyed `object` specifying spacing sizes for multiple breakpoints.
+Optional. A `string` or `number` specifying the spacing key. May be a keyed `object` specifying spacing keys for multiple breakpoints.
 
 #### right
 
 Margin on the right.
 
-Optional. A `string` or `number` specifying the spacing size. May be a keyed `object` specifying spacing sizes for multiple breakpoints.
+Optional. A `string` or `number` specifying the spacing key. May be a keyed `object` specifying spacing keys for multiple breakpoints.
 
 #### inline
 
@@ -141,43 +149,43 @@ Optional. A `string` or valid React component. Defaults to `div`.
 
 Padding on all sides.
 
-Optional. A `string` or `number` specifying the spacing size. May be a keyed `object` specifying spacing sizes for multiple breakpoints.
+Optional. A `string` or `number` specifying the spacing key. May be a keyed `object` specifying spacing keys for multiple breakpoints.
 
 #### horizontal
 
 Padding on the left and right.
 
-Optional. A `string` or `number` specifying the spacing size. May be a keyed `object` specifying spacing sizes for multiple breakpoints.
+Optional. A `string` or `number` specifying the spacing key. May be a keyed `object` specifying spacing keys for multiple breakpoints.
 
 #### vertical
 
 Padding on the top and bottom.
 
-Optional. A `string` or `number` specifying the spacing size. May be a keyed `object` specifying spacing sizes for multiple breakpoints.
+Optional. A `string` or `number` specifying the spacing key. May be a keyed `object` specifying spacing keys for multiple breakpoints.
 
 #### top
 
 Padding on the top.
 
-Optional. A `string` or `number` specifying the spacing size. May be a keyed `object` specifying spacing sizes for multiple breakpoints.
+Optional. A `string` or `number` specifying the spacing key. May be a keyed `object` specifying spacing keys for multiple breakpoints.
 
 #### bottom
 
 Padding on the bottom.
 
-Optional. A `string` or `number` specifying the spacing size. May be a keyed `object` specifying spacing sizes for multiple breakpoints.
+Optional. A `string` or `number` specifying the spacing key. May be a keyed `object` specifying spacing keys for multiple breakpoints.
 
 #### left
 
 Padding on the left.
 
-Optional. A `string` or `number` specifying the spacing size. May be a keyed `object` specifying spacing sizes for multiple breakpoints.
+Optional. A `string` or `number` specifying the spacing key. May be a keyed `object` specifying spacing keys for multiple breakpoints.
 
 #### right
 
 Padding on the right.
 
-Optional. A `string` or `number` specifying the spacing size. May be a keyed `object` specifying spacing sizes for multiple breakpoints.
+Optional. A `string` or `number` specifying the spacing key. May be a keyed `object` specifying spacing keys for multiple breakpoints.
 
 #### inline
 
@@ -193,121 +201,119 @@ Optional. A `string` or valid React component. Defaults to `div`.
 
 ## Mixins
 
-#### m(size, theme)
+#### m(values)
 
 Margin on all sides.
 
 **Parameters:**
-- `size` - Required. A `string` or `number` specifying the spacing size. May be a keyed `object` specifying spacing sizes for multiple breakpoints.
-- `theme` - Optional. An `object` containing breakpoint and spacing sizes
 
-#### mx(size, theme)
+* `values` - Required. A `string` or `number` specifying the spacing key. May be a keyed `object` specifying spacing keys for multiple breakpoints.
+
+#### mx(values)
 
 Margin on the left and right.
 
 **Parameters:**
-- `size` - Required. A `string` or `number` specifying the spacing size. May be a keyed `object` specifying spacing sizes for multiple breakpoints.
-- `theme` - Optional. An `object` containing breakpoint and spacing sizes
 
-#### my(size, theme)
+* `values` - Required. A `string` or `number` specifying the spacing key. May be a keyed `object` specifying spacing keys for multiple breakpoints.
+
+#### my(values)
 
 Margin on the top and bottom.
 
 **Parameters:**
-- `size` - Required. A `string` or `number` specifying the spacing size. May be a keyed `object` specifying spacing sizes for multiple breakpoints.
-- `theme` - Optional. An `object` containing breakpoint and spacing sizes
 
-#### mt(size, theme)
+* `values` - Required. A `string` or `number` specifying the spacing key. May be a keyed `object` specifying spacing keys for multiple breakpoints.
+
+#### mt(values)
 
 Margin on the top.
 
 **Parameters:**
-- `size` - Required. A `string` or `number` specifying the spacing size. May be a keyed `object` specifying spacing sizes for multiple breakpoints.
-- `theme` - Optional. An `object` containing breakpoint and spacing sizes
 
-#### mr(size, theme)
+* `values` - Required. A `string` or `number` specifying the spacing key. May be a keyed `object` specifying spacing keys for multiple breakpoints.
+
+#### mr(values)
 
 Margin on the right.
 
 **Parameters:**
-- `size` - Required. A `string` or `number` specifying the spacing size. May be a keyed `object` specifying spacing sizes for multiple breakpoints.
-- `theme` - Optional. An `object` containing breakpoint and spacing sizes
 
-#### mb(size, theme)
+* `values` - Required. A `string` or `number` specifying the spacing key. May be a keyed `object` specifying spacing keys for multiple breakpoints.
+
+#### mb(values)
 
 Margin on the bottom.
 
 **Parameters:**
-- `size` - Required. A `string` or `number` specifying the spacing size. May be a keyed `object` specifying spacing sizes for multiple breakpoints.
-- `theme` - Optional. An `object` containing breakpoint and spacing sizes
 
-#### ml(size, theme)
+* `values` - Required. A `string` or `number` specifying the spacing key. May be a keyed `object` specifying spacing keys for multiple breakpoints.
+
+#### ml(values)
 
 Margin on the left.
 
 **Parameters:**
-- `size` - Required. A `string` or `number` specifying the spacing size. May be a keyed `object` specifying spacing sizes for multiple breakpoints.
-- `theme` - Optional. An `object` containing breakpoint and spacing sizes
 
+* `values` - Required. A `string` or `number` specifying the spacing key. May be a keyed `object` specifying spacing keys for multiple breakpoints.
 
-------
+---
 
-#### p(size, theme)
+#### p(values)
 
 Padding on all sides.
 
 **Parameters:**
-- `size` - Required. A `string` or `number` specifying the spacing size. May be a keyed `object` specifying spacing sizes for multiple breakpoints.
-- `theme` - Optional. An `object` containing breakpoint and spacing sizes
 
-#### px(size, theme)
+* `values` - Required. A `string` or `number` specifying the spacing key. May be a keyed `object` specifying spacing keys for multiple breakpoints.
+
+#### px(values)
 
 Padding on the left and right.
 
 **Parameters:**
-- `size` - Required. A `string` or `number` specifying the spacing size. May be a keyed `object` specifying spacing sizes for multiple breakpoints.
-- `theme` - Optional. An `object` containing breakpoint and spacing sizes
 
-#### py(size, theme)
+* `values` - Required. A `string` or `number` specifying the spacing key. May be a keyed `object` specifying spacing keys for multiple breakpoints.
+
+#### py(values)
 
 Padding on the top and bottom.
 
 **Parameters:**
-- `size` - Required. A `string` or `number` specifying the spacing size. May be a keyed `object` specifying spacing sizes for multiple breakpoints.
-- `theme` - Optional. An `object` containing breakpoint and spacing sizes
 
-#### pt(size, theme)
+* `values` - Required. A `string` or `number` specifying the spacing key. May be a keyed `object` specifying spacing keys for multiple breakpoints.
+
+#### pt(values)
 
 Padding on the top.
 
 **Parameters:**
-- `size` - Required. A `string` or `number` specifying the spacing size. May be a keyed `object` specifying spacing sizes for multiple breakpoints.
-- `theme` - Optional. An `object` containing breakpoint and spacing sizes
 
-#### pr(size, theme)
+* `values` - Required. A `string` or `number` specifying the spacing key. May be a keyed `object` specifying spacing keys for multiple breakpoints.
+
+#### pr(values)
 
 Padding on the right.
 
 **Parameters:**
-- `size` - Required. A `string` or `number` specifying the spacing size. May be a keyed `object` specifying spacing sizes for multiple breakpoints.
-- `theme` - Optional. An `object` containing breakpoint and spacing sizes
 
-#### pb(size, theme)
+* `values` - Required. A `string` or `number` specifying the spacing key. May be a keyed `object` specifying spacing keys for multiple breakpoints.
+
+#### pb(values)
 
 Padding on the bottom.
 
 **Parameters:**
-- `size` - Required. A `string` or `number` specifying the spacing size. May be a keyed `object` specifying spacing sizes for multiple breakpoints.
-- `theme` - Optional. An `object` containing breakpoint and spacing sizes
 
-#### pl(size, theme)
+* `values` - Required. A `string` or `number` specifying the spacing key. May be a keyed `object` specifying spacing keys for multiple breakpoints.
+
+#### pl(values)
 
 Padding on the left.
 
 **Parameters:**
-- `size` - Required. A `string` or `number` specifying the spacing size. May be a keyed `object` specifying spacing sizes for multiple breakpoints.
-- `theme` - Optional. An `object` containing breakpoint and spacing sizes
 
+* `values` - Required. A `string` or `number` specifying the spacing key. May be a keyed `object` specifying spacing keys for multiple breakpoints.
 
 ## Defaults
 
@@ -322,34 +328,3 @@ Padding on the left.
   6: '8rem'
 }
 ```
-
-## Change log
-
-### 2.1.3
-
-- fix: not used to a new IDE which doesn't auto save
-
-### 2.1.2
-
-- fix: remove undefined margin values
-
-### 2.1.1
-
-- fix: updated the documentation
-
-### 2.1.0
-
-- add: added a `component` prop to customise the underlying element type
-
-### 2.0.4
-
-- fix: Use `prop-types` to make warning with `react@15.5` go away
-
-### 2.0.1-3
-
-- fix: usage examples
-
-### 2.0.0
-
-- break: removed `display: inline-block;` from `<Margin/>` because an `inline-block` wrapping a `block` changes the width of the `block`. e.g. `<Margin><h1/></Margin>` meant the `h1` was unexpectedly not full width
-- addition: added a prop named `inline` to change `<Margin/>` and `<Padding/>` to from `block` to `inline-block`.

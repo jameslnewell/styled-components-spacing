@@ -1,43 +1,43 @@
 {
   "name": "styled-components-spacing",
-  "version": "2.1.3",
+  "version": "3.0.0",
   "description": "Responsive margin and padding components for `styled-components`💅.",
-  "keywords": [
-    "react",
-    "styled-components",
-    "responsive",
-    "style",
-    "spacing",
-    "margin",
-    "breakpoint",
-    "grid"
-  ],
+  "keywords": ["react", "styled-components", "responsive", "style", "spacing", "margin", "breakpoint", "grid"],
   "repository": "jameslnewell/styled-components-spacing",
-  "main": "dist/index.js",
-  "files": [
-    "dist"
-  ],
+  "main": "dist/cjs/index.js",
+  "jsnext:main": "dist/esm/index.js",
+  "files": ["dist/cjs", "dist/esm"],
   "peerDependencies": {
-    "styled-components": "^1 || ^2.0.0-3"
+    "styled-components": ">= 1 < 4"
   },
   "dependencies": {
-    "prop-types": "^15.5.8",
-    "react-create-component-from-tag-prop": "^1.2.1",
-    "styled-components-breakpoint": "^1.0.0-preview.3"
+    "styled-components-breakpoint": "^2.0.1"
   },
   "devDependencies": {
-    "babel-cli": "^6.22.2",
-    "babel-plugin-transform-object-rest-spread": "^6.23.0",
-    "babel-preset-es2015": "^6.22.0",
-    "babel-preset-react": "^6.23.0",
-    "react": "^15.4.2",
-    "react-dom": "^15.4.2",
-    "styled-components": "^2.0.0-3"
+    "@tradie/react-component-scripts": "^1.0.0-alpha.a573b72a",
+    "gh-pages": "^1.1.0",
+    "husky": "^0.14.3",
+    "jest-styled-components": "^4.11.0-1",
+    "lint-staged": "^6.1.0",
+    "prettier": "^1.10.2",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-test-renderer": "^16.2.0",
+    "styled-components": "^3.1.6"
   },
   "scripts": {
-    "build": "rm -rf ./dist && mkdir -p ./dist && babel ./src --out-dir ./dist",
-    "watch": "npm run build -- --watch",
-    "prepublish": "npm run build"
+    "clean": "tradie clean",
+    "build": "tradie build",
+    "watch": "tradie build --watch",
+    "dev": "tradie dev",
+    "test": "tradie test",
+    "deploy": "gh-pages -d \"./dist/example\"",
+    "prepublishOnly": "yarn run clean && yarn run build && yarn run test",
+    "postpublish": "yarn run deploy",
+    "precommit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,jsx,json,md}": ["prettier --write", "git add"]
   },
   "license": "MIT"
 }
