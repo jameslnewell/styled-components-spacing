@@ -54,3 +54,5 @@ export const Margin = styled.div`
   ${({ bottom, theme }) => _mb(bottom, theme)} 
   ${({ left, theme }) => _ml(left, theme)} 
 `;
+
+Margin.displayName = 'Margin';
