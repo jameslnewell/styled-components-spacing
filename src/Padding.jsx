@@ -55,4 +55,6 @@ export const Padding = styled.div`
   ${({ left, theme }) => _pl(left, theme)} 
 `;
 
+Padding.displayName = 'Padding';
+
 export default Padding;
