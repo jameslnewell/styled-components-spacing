@@ -1,5 +1,9 @@
 ## Change log
 
+## 3.0.1
+
+* added `Margin.displayName` and `Padding.displayName` ([#9](https://github.com/jameslnewell/styled-components-spacing/pull/9))
+
 ## 3.0.0
 
 * updated the `peerDependency` to support `styled-components@^3`
