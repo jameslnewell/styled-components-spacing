@@ -1,5 +1,10 @@
 ## Change log
 
+### 3.1.0
+
+* added the `module` field
+* added badges to README
+
 ## 3.0.1
 
 * added `Margin.displayName` and `Padding.displayName` ([#9](https://github.com/jameslnewell/styled-components-spacing/pull/9))

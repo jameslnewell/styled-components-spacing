@@ -1,12 +1,12 @@
 # styled-components-spacing
 
-[![Build Status](https://travis-ci.org/jameslnewell/styled-components-spacing.svg?branch=master)](https://travis-ci.org/jameslnewell/styled-components-spacing)
+![npm](https://img.shields.io/npm/v/styled-components-spacing.svg) ![npm bundle size (minified + gzip)](https://img.shields.io/bundlephobia/minzip/styled-components-spacing.svg) ![npm](https://img.shields.io/npm/dm/styled-components-spacing.svg) [![Build Status](https://travis-ci.org/jameslnewell/styled-components-spacing.svg?branch=master)](https://travis-ci.org/jameslnewell/styled-components-spacing)
 
 Responsive margin and padding components for `styled-components` 💅.
 
 > [Change log](https://github.com/jameslnewell/styled-components-spacing/blob/master/CHANGELOG.md)
 
-> Have a look 👀 at [`styled-components-breakpoint`](https://github.com/jameslnewell/styled-components-breakpoint) and [`styled-components-grid`](https://github.com/jameslnewell/styled-components-grid) which work well with this package.
+> Have a look 👀 at [`styled-components-breakpoint`](https://github.com/jameslnewell/styled-components-breakpoint) and [`styled-components-grid`](https://github.com/jameslnewell/styled-components-grid) which both work well with this package.
 
 ## Installation
 

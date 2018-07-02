@@ -1,10 +1,11 @@
 {
   "name": "styled-components-spacing",
-  "version": "3.0.1",
+  "version": "3.1.0",
   "description": "Responsive margin and padding components for `styled-components`💅.",
   "keywords": ["react", "styled-components", "responsive", "style", "spacing", "margin", "breakpoint", "grid"],
   "repository": "jameslnewell/styled-components-spacing",
   "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
   "jsnext:main": "dist/esm/index.js",
   "files": ["dist/cjs", "dist/esm"],
   "peerDependencies": {
