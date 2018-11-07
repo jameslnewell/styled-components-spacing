@@ -40,7 +40,7 @@ export function getSpacingFromTheme(key: string, theme: Theme): string {
 
 export function _m(values: Values, theme: Theme) {
   return map(values, key => {
-    if (key) {
+    if (typeof key !== 'undefined') {
       return `
         margin: ${getSpacingFromTheme(key, theme)};
       `;
@@ -52,7 +52,7 @@ export function _m(values: Values, theme: Theme) {
 
 export function _mx(values: Values, theme: Theme) {
   return map(values, key => {
-    if (key) {
+    if (typeof key !== 'undefined') {
       return `
         margin-left: ${getSpacingFromTheme(key, theme)};
         margin-right: ${getSpacingFromTheme(key, theme)};
@@ -65,7 +65,7 @@ export function _mx(values: Values, theme: Theme) {
 
 export function _my(values: Values, theme: Theme) {
   return map(values, key => {
-    if (key) {
+    if (typeof key !== 'undefined') {
       return `
         margin-top: ${getSpacingFromTheme(key, theme)};
         margin-bottom: ${getSpacingFromTheme(key, theme)};
@@ -78,7 +78,7 @@ export function _my(values: Values, theme: Theme) {
 
 export function _mt(values: Values, theme: Theme) {
   return map(values, key => {
-    if (key) {
+    if (typeof key !== 'undefined') {
       return `
         margin-top: ${getSpacingFromTheme(key, theme)};
       `;
@@ -90,7 +90,7 @@ export function _mt(values: Values, theme: Theme) {
 
 export function _mr(values: Values, theme: Theme) {
   return map(values, key => {
-    if (key) {
+    if (typeof key !== 'undefined') {
       return `
         margin-right: ${getSpacingFromTheme(key, theme)};
       `;
@@ -102,7 +102,7 @@ export function _mr(values: Values, theme: Theme) {
 
 export function _mb(values: Values, theme: Theme) {
   return map(values, key => {
-    if (key) {
+    if (typeof key !== 'undefined') {
       return `
         margin-bottom: ${getSpacingFromTheme(key, theme)};
       `;
@@ -114,7 +114,7 @@ export function _mb(values: Values, theme: Theme) {
 
 export function _ml(values: Values, theme: Theme) {
   return map(values, key => {
-    if (key) {
+    if (typeof key !== 'undefined') {
       return `
       margin-left: ${getSpacingFromTheme(key, theme)};
       `;
@@ -126,7 +126,7 @@ export function _ml(values: Values, theme: Theme) {
 
 export function _p(values: Values, theme: Theme) {
   return map(values, key => {
-    if (key) {
+    if (typeof key !== 'undefined') {
       return `
         padding: ${getSpacingFromTheme(key, theme)};
       `;
@@ -138,7 +138,7 @@ export function _p(values: Values, theme: Theme) {
 
 export function _px(values: Values, theme: Theme) {
   return map(values, key => {
-    if (key) {
+    if (typeof key !== 'undefined') {
       return `
         padding-left: ${getSpacingFromTheme(key, theme)};
         padding-right: ${getSpacingFromTheme(key, theme)};
@@ -151,7 +151,7 @@ export function _px(values: Values, theme: Theme) {
 
 export function _py(values: Values, theme: Theme) {
   return map(values, key => {
-    if (key) {
+    if (typeof key !== 'undefined') {
       return `
         padding-top: ${getSpacingFromTheme(key, theme)};
         padding-bottom: ${getSpacingFromTheme(key, theme)};
@@ -164,7 +164,7 @@ export function _py(values: Values, theme: Theme) {
 
 export function _pt(values: Values, theme: Theme) {
   return map(values, key => {
-    if (key) {
+    if (typeof key !== 'undefined') {
       return `
         padding-top: ${getSpacingFromTheme(key, theme)};
       `;
@@ -176,7 +176,7 @@ export function _pt(values: Values, theme: Theme) {
 
 export function _pr(values: Values, theme: Theme) {
   return map(values, key => {
-    if (key) {
+    if (typeof key !== 'undefined') {
       return `
         padding-right: ${getSpacingFromTheme(key, theme)};
       `;
@@ -188,7 +188,7 @@ export function _pr(values: Values, theme: Theme) {
 
 export function _pb(values: Values, theme: Theme) {
   return map(values, key => {
-    if (key) {
+    if (typeof key !== 'undefined') {
       return `
         padding-bottom: ${getSpacingFromTheme(key, theme)};
       `;
@@ -200,7 +200,7 @@ export function _pb(values: Values, theme: Theme) {
 
 export function _pl(values: Values, theme: Theme) {
   return map(values, key => {
-    if (key) {
+    if (typeof key !== 'undefined') {
       return `
         padding-left: ${getSpacingFromTheme(key, theme)};
       `;
