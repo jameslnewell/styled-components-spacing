@@ -1,5 +1,9 @@
 ## Change log
 
+### 3.1.1
+
+* fix zero indexed margin/paddings issue ([#12](https://github.com/jameslnewell/styled-components-spacing/pull/12))
+
 ### 3.1.0
 
 * added the `module` field
