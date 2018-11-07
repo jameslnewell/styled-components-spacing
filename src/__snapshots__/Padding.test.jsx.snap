@@ -1,8 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[
-  `Padding all it should have a different padding for all breakpoints when the prop is passed 1`
-] = `
+exports[`Padding all it should have a different padding for all breakpoints when the prop is passed 1`] = `
+.c0 {
+  padding: 0;
+}
+
 @media (min-width:46.0625em) {
   .c0 {
     padding: 0.5rem;
@@ -20,9 +22,7 @@ exports[
 />
 `;
 
-exports[
-  `Padding all it should have a different padding for some breakpoints when the prop is passed 1`
-] = `
+exports[`Padding all it should have a different padding for some breakpoints when the prop is passed 1`] = `
 @media (min-width:46.0625em) {
   .c0 {
     padding: 0.5rem;
@@ -40,9 +40,7 @@ exports[
 />
 `;
 
-exports[
-  `Padding all it should have a single padding for all breakpoints when the prop is passed 1`
-] = `
+exports[`Padding all it should have a single padding for all breakpoints when the prop is passed 1`] = `
 .c0 {
   padding: 0.25rem;
 }
@@ -52,9 +50,11 @@ exports[
 />
 `;
 
-exports[
-  `Padding bottom it should have a different padding for all breakpoints when the prop is passed 1`
-] = `
+exports[`Padding bottom it should have a different padding for all breakpoints when the prop is passed 1`] = `
+.c0 {
+  padding-bottom: 0;
+}
+
 @media (min-width:46.0625em) {
   .c0 {
     padding-bottom: 0.5rem;
@@ -72,9 +72,7 @@ exports[
 />
 `;
 
-exports[
-  `Padding bottom it should have a different padding for some breakpoints when the prop is passed 1`
-] = `
+exports[`Padding bottom it should have a different padding for some breakpoints when the prop is passed 1`] = `
 @media (min-width:46.0625em) {
   .c0 {
     padding-bottom: 0.5rem;
@@ -92,9 +90,7 @@ exports[
 />
 `;
 
-exports[
-  `Padding bottom it should have a single padding for all breakpoints when the prop is passed 1`
-] = `
+exports[`Padding bottom it should have a single padding for all breakpoints when the prop is passed 1`] = `
 .c0 {
   padding-bottom: 0.25rem;
 }
@@ -104,9 +100,12 @@ exports[
 />
 `;
 
-exports[
-  `Padding horizontal it should have a different padding for all breakpoints when the prop is passed 1`
-] = `
+exports[`Padding horizontal it should have a different padding for all breakpoints when the prop is passed 1`] = `
+.c0 {
+  padding-left: 0;
+  padding-right: 0;
+}
+
 @media (min-width:46.0625em) {
   .c0 {
     padding-left: 0.5rem;
@@ -126,9 +125,7 @@ exports[
 />
 `;
 
-exports[
-  `Padding horizontal it should have a different padding for some breakpoints when the prop is passed 1`
-] = `
+exports[`Padding horizontal it should have a different padding for some breakpoints when the prop is passed 1`] = `
 @media (min-width:46.0625em) {
   .c0 {
     padding-left: 0.5rem;
@@ -148,9 +145,7 @@ exports[
 />
 `;
 
-exports[
-  `Padding horizontal it should have a single padding for all breakpoints when the prop is passed 1`
-] = `
+exports[`Padding horizontal it should have a single padding for all breakpoints when the prop is passed 1`] = `
 .c0 {
   padding-left: 0.25rem;
   padding-right: 0.25rem;
@@ -177,9 +172,11 @@ exports[`Padding it should have no styles when no props are passed 1`] = `
 />
 `;
 
-exports[
-  `Padding left it should have a different padding for all breakpoints when the prop is passed 1`
-] = `
+exports[`Padding left it should have a different padding for all breakpoints when the prop is passed 1`] = `
+.c0 {
+  padding-left: 0;
+}
+
 @media (min-width:46.0625em) {
   .c0 {
     padding-left: 0.5rem;
@@ -197,9 +194,7 @@ exports[
 />
 `;
 
-exports[
-  `Padding left it should have a different padding for some breakpoints when the prop is passed 1`
-] = `
+exports[`Padding left it should have a different padding for some breakpoints when the prop is passed 1`] = `
 @media (min-width:46.0625em) {
   .c0 {
     padding-left: 0.5rem;
@@ -217,9 +212,7 @@ exports[
 />
 `;
 
-exports[
-  `Padding left it should have a single padding for all breakpoints when the prop is passed 1`
-] = `
+exports[`Padding left it should have a single padding for all breakpoints when the prop is passed 1`] = `
 .c0 {
   padding-left: 0.25rem;
 }
@@ -229,9 +222,11 @@ exports[
 />
 `;
 
-exports[
-  `Padding right it should have a different padding for all breakpoints when the prop is passed 1`
-] = `
+exports[`Padding right it should have a different padding for all breakpoints when the prop is passed 1`] = `
+.c0 {
+  padding-right: 0;
+}
+
 @media (min-width:46.0625em) {
   .c0 {
     padding-right: 0.5rem;
@@ -249,9 +244,7 @@ exports[
 />
 `;
 
-exports[
-  `Padding right it should have a different padding for some breakpoints when the prop is passed 1`
-] = `
+exports[`Padding right it should have a different padding for some breakpoints when the prop is passed 1`] = `
 @media (min-width:46.0625em) {
   .c0 {
     padding-right: 0.5rem;
@@ -269,9 +262,7 @@ exports[
 />
 `;
 
-exports[
-  `Padding right it should have a single padding for all breakpoints when the prop is passed 1`
-] = `
+exports[`Padding right it should have a single padding for all breakpoints when the prop is passed 1`] = `
 .c0 {
   padding-right: 0.25rem;
 }
@@ -281,9 +272,11 @@ exports[
 />
 `;
 
-exports[
-  `Padding top it should have a different padding for all breakpoints when the prop is passed 1`
-] = `
+exports[`Padding top it should have a different padding for all breakpoints when the prop is passed 1`] = `
+.c0 {
+  padding-top: 0;
+}
+
 @media (min-width:46.0625em) {
   .c0 {
     padding-top: 0.5rem;
@@ -301,9 +294,7 @@ exports[
 />
 `;
 
-exports[
-  `Padding top it should have a different padding for some breakpoints when the prop is passed 1`
-] = `
+exports[`Padding top it should have a different padding for some breakpoints when the prop is passed 1`] = `
 @media (min-width:46.0625em) {
   .c0 {
     padding-top: 0.5rem;
@@ -321,9 +312,7 @@ exports[
 />
 `;
 
-exports[
-  `Padding top it should have a single padding for all breakpoints when the prop is passed 1`
-] = `
+exports[`Padding top it should have a single padding for all breakpoints when the prop is passed 1`] = `
 .c0 {
   padding-top: 0.25rem;
 }
@@ -333,9 +322,12 @@ exports[
 />
 `;
 
-exports[
-  `Padding vertical it should have a different padding for all breakpoints when the prop is passed 1`
-] = `
+exports[`Padding vertical it should have a different padding for all breakpoints when the prop is passed 1`] = `
+.c0 {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
 @media (min-width:46.0625em) {
   .c0 {
     padding-top: 0.5rem;
@@ -355,9 +347,7 @@ exports[
 />
 `;
 
-exports[
-  `Padding vertical it should have a different padding for some breakpoints when the prop is passed 1`
-] = `
+exports[`Padding vertical it should have a different padding for some breakpoints when the prop is passed 1`] = `
 @media (min-width:46.0625em) {
   .c0 {
     padding-top: 0.5rem;
@@ -377,9 +367,7 @@ exports[
 />
 `;
 
-exports[
-  `Padding vertical it should have a single padding for all breakpoints when the prop is passed 1`
-] = `
+exports[`Padding vertical it should have a single padding for all breakpoints when the prop is passed 1`] = `
 .c0 {
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;

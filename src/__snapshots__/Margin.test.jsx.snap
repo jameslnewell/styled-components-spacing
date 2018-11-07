@@ -1,8 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[
-  `Margin all it should have a different margin for all breakpoints when the prop is passed 1`
-] = `
+exports[`Margin all it should have a different margin for all breakpoints when the prop is passed 1`] = `
+.c0 {
+  margin: 0;
+}
+
 @media (min-width:46.0625em) {
   .c0 {
     margin: 0.5rem;
@@ -20,9 +22,7 @@ exports[
 />
 `;
 
-exports[
-  `Margin all it should have a different margin for some breakpoints when the prop is passed 1`
-] = `
+exports[`Margin all it should have a different margin for some breakpoints when the prop is passed 1`] = `
 @media (min-width:46.0625em) {
   .c0 {
     margin: 0.5rem;
@@ -40,9 +40,7 @@ exports[
 />
 `;
 
-exports[
-  `Margin all it should have a single margin for all breakpoints when the prop is passed 1`
-] = `
+exports[`Margin all it should have a single margin for all breakpoints when the prop is passed 1`] = `
 .c0 {
   margin: 0.25rem;
 }
@@ -52,9 +50,11 @@ exports[
 />
 `;
 
-exports[
-  `Margin bottom it should have a different margin for all breakpoints when the prop is passed 1`
-] = `
+exports[`Margin bottom it should have a different margin for all breakpoints when the prop is passed 1`] = `
+.c0 {
+  margin-bottom: 0;
+}
+
 @media (min-width:46.0625em) {
   .c0 {
     margin-bottom: 0.5rem;
@@ -72,9 +72,7 @@ exports[
 />
 `;
 
-exports[
-  `Margin bottom it should have a different margin for some breakpoints when the prop is passed 1`
-] = `
+exports[`Margin bottom it should have a different margin for some breakpoints when the prop is passed 1`] = `
 @media (min-width:46.0625em) {
   .c0 {
     margin-bottom: 0.5rem;
@@ -92,9 +90,7 @@ exports[
 />
 `;
 
-exports[
-  `Margin bottom it should have a single margin for all breakpoints when the prop is passed 1`
-] = `
+exports[`Margin bottom it should have a single margin for all breakpoints when the prop is passed 1`] = `
 .c0 {
   margin-bottom: 0.25rem;
 }
@@ -104,9 +100,12 @@ exports[
 />
 `;
 
-exports[
-  `Margin horizontal it should have a different margin for all breakpoints when the prop is passed 1`
-] = `
+exports[`Margin horizontal it should have a different margin for all breakpoints when the prop is passed 1`] = `
+.c0 {
+  margin-left: 0;
+  margin-right: 0;
+}
+
 @media (min-width:46.0625em) {
   .c0 {
     margin-left: 0.5rem;
@@ -126,9 +125,7 @@ exports[
 />
 `;
 
-exports[
-  `Margin horizontal it should have a different margin for some breakpoints when the prop is passed 1`
-] = `
+exports[`Margin horizontal it should have a different margin for some breakpoints when the prop is passed 1`] = `
 @media (min-width:46.0625em) {
   .c0 {
     margin-left: 0.5rem;
@@ -148,9 +145,7 @@ exports[
 />
 `;
 
-exports[
-  `Margin horizontal it should have a single margin for all breakpoints when the prop is passed 1`
-] = `
+exports[`Margin horizontal it should have a single margin for all breakpoints when the prop is passed 1`] = `
 .c0 {
   margin-left: 0.25rem;
   margin-right: 0.25rem;
@@ -177,9 +172,11 @@ exports[`Margin it should have no styles when no props are passed 1`] = `
 />
 `;
 
-exports[
-  `Margin left it should have a different margin for all breakpoints when the prop is passed 1`
-] = `
+exports[`Margin left it should have a different margin for all breakpoints when the prop is passed 1`] = `
+.c0 {
+  margin-left: 0;
+}
+
 @media (min-width:46.0625em) {
   .c0 {
     margin-left: 0.5rem;
@@ -197,9 +194,7 @@ exports[
 />
 `;
 
-exports[
-  `Margin left it should have a different margin for some breakpoints when the prop is passed 1`
-] = `
+exports[`Margin left it should have a different margin for some breakpoints when the prop is passed 1`] = `
 @media (min-width:46.0625em) {
   .c0 {
     margin-left: 0.5rem;
@@ -217,9 +212,7 @@ exports[
 />
 `;
 
-exports[
-  `Margin left it should have a single margin for all breakpoints when the prop is passed 1`
-] = `
+exports[`Margin left it should have a single margin for all breakpoints when the prop is passed 1`] = `
 .c0 {
   margin-left: 0.25rem;
 }
@@ -229,9 +222,11 @@ exports[
 />
 `;
 
-exports[
-  `Margin right it should have a different margin for all breakpoints when the prop is passed 1`
-] = `
+exports[`Margin right it should have a different margin for all breakpoints when the prop is passed 1`] = `
+.c0 {
+  margin-right: 0;
+}
+
 @media (min-width:46.0625em) {
   .c0 {
     margin-right: 0.5rem;
@@ -249,9 +244,7 @@ exports[
 />
 `;
 
-exports[
-  `Margin right it should have a different margin for some breakpoints when the prop is passed 1`
-] = `
+exports[`Margin right it should have a different margin for some breakpoints when the prop is passed 1`] = `
 @media (min-width:46.0625em) {
   .c0 {
     margin-right: 0.5rem;
@@ -269,9 +262,7 @@ exports[
 />
 `;
 
-exports[
-  `Margin right it should have a single margin for all breakpoints when the prop is passed 1`
-] = `
+exports[`Margin right it should have a single margin for all breakpoints when the prop is passed 1`] = `
 .c0 {
   margin-right: 0.25rem;
 }
@@ -281,9 +272,11 @@ exports[
 />
 `;
 
-exports[
-  `Margin top it should have a different margin for all breakpoints when the prop is passed 1`
-] = `
+exports[`Margin top it should have a different margin for all breakpoints when the prop is passed 1`] = `
+.c0 {
+  margin-top: 0;
+}
+
 @media (min-width:46.0625em) {
   .c0 {
     margin-top: 0.5rem;
@@ -301,9 +294,7 @@ exports[
 />
 `;
 
-exports[
-  `Margin top it should have a different margin for some breakpoints when the prop is passed 1`
-] = `
+exports[`Margin top it should have a different margin for some breakpoints when the prop is passed 1`] = `
 @media (min-width:46.0625em) {
   .c0 {
     margin-top: 0.5rem;
@@ -321,9 +312,7 @@ exports[
 />
 `;
 
-exports[
-  `Margin top it should have a single margin for all breakpoints when the prop is passed 1`
-] = `
+exports[`Margin top it should have a single margin for all breakpoints when the prop is passed 1`] = `
 .c0 {
   margin-top: 0.25rem;
 }
@@ -333,9 +322,12 @@ exports[
 />
 `;
 
-exports[
-  `Margin vertical it should have a different margin for all breakpoints when the prop is passed 1`
-] = `
+exports[`Margin vertical it should have a different margin for all breakpoints when the prop is passed 1`] = `
+.c0 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 @media (min-width:46.0625em) {
   .c0 {
     margin-top: 0.5rem;
@@ -355,9 +347,7 @@ exports[
 />
 `;
 
-exports[
-  `Margin vertical it should have a different margin for some breakpoints when the prop is passed 1`
-] = `
+exports[`Margin vertical it should have a different margin for some breakpoints when the prop is passed 1`] = `
 @media (min-width:46.0625em) {
   .c0 {
     margin-top: 0.5rem;
@@ -377,9 +367,7 @@ exports[
 />
 `;
 
-exports[
-  `Margin vertical it should have a single margin for all breakpoints when the prop is passed 1`
-] = `
+exports[`Margin vertical it should have a single margin for all breakpoints when the prop is passed 1`] = `
 .c0 {
   margin-top: 0.25rem;
   margin-bottom: 0.25rem;
