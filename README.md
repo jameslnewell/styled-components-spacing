@@ -137,12 +137,6 @@ Size the element to the width of its children.
 
 Optional. A `boolean`. Defaults to `false`.
 
-#### component
-
-The component to render the styles on.
-
-Optional. A `string` or valid React component. Defaults to `div`.
-
 ### &lt;Padding/&gt;
 
 #### all
@@ -192,12 +186,6 @@ Optional. A `string` or `number` specifying the spacing key. May be a keyed `obj
 Size the element to the width of its children.
 
 Optional. A `boolean`. Defaults to `false`.
-
-#### component
-
-The component to render the styles on.
-
-Optional. A `string` or valid React component. Defaults to `div`.
 
 ## Mixins
 
@@ -328,3 +316,7 @@ Padding on the left.
   6: '8rem'
 }
 ```
+
+## Rendering on a custom component
+
+This library no longer supports the `component` prop - if you wish to use a custom component with this library use [`.withComponent()`](https://www.styled-components.com/docs/api#withcomponent)
