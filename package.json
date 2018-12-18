@@ -1,13 +1,25 @@
 {
   "name": "styled-components-spacing",
-  "version": "3.1.1",
+  "version": "3.1.2",
   "description": "Responsive margin and padding components for `styled-components`💅.",
-  "keywords": ["react", "styled-components", "responsive", "style", "spacing", "margin", "breakpoint", "grid"],
+  "keywords": [
+    "react",
+    "styled-components",
+    "responsive",
+    "style",
+    "spacing",
+    "margin",
+    "breakpoint",
+    "grid"
+  ],
   "repository": "jameslnewell/styled-components-spacing",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "jsnext:main": "dist/esm/index.js",
-  "files": ["dist/cjs", "dist/esm"],
+  "files": [
+    "dist/cjs",
+    "dist/esm"
+  ],
   "peerDependencies": {
     "styled-components": ">= 1 < 4"
   },
@@ -38,7 +50,10 @@
     "precommit": "lint-staged"
   },
   "lint-staged": {
-    "*.{js,jsx,json,md}": ["prettier --write", "git add"]
+    "*.{js,jsx,json,md}": [
+      "prettier --write",
+      "git add"
+    ]
   },
   "license": "MIT"
 }
