@@ -1,20 +1,30 @@
 # styled-components-spacing
 
-![npm](https://img.shields.io/npm/v/styled-components-spacing.svg) ![npm bundle size (minified + gzip)](https://img.shields.io/bundlephobia/minzip/styled-components-spacing.svg) ![npm](https://img.shields.io/npm/dm/styled-components-spacing.svg) [![Build Status](https://travis-ci.org/jameslnewell/styled-components-spacing.svg?branch=master)](https://travis-ci.org/jameslnewell/styled-components-spacing)
+![npm](https://img.shields.io/npm/v/styled-components-spacing.svg) ![npm bundle size (minified + gzip)](https://img.shields.io/bundlephobia/minzip/styled-components-spacing.svg) ![npm](https://img.shields.io/npm/dm/styled-components-spacing.svg) [![Build Status]![GithubActions](https://github.com/jameslnewell/styled-components-spacing/workflows/main/badge.svg)](https://github.com/jameslnewell/styled-components-spacing/actions)
 
-Responsive margin and padding components for `styled-components` 💅.
+Responsive margin and padding utilities for `styled-components` 💅.
 
-> [Change log](https://github.com/jameslnewell/styled-components-spacing/blob/master/CHANGELOG.md)
+> 🕸 [Website](https://jameslnewell.github.io/styled-components-spacing/)
 
-> Have a look 👀 at [`styled-components-breakpoint`](https://github.com/jameslnewell/styled-components-breakpoint) and [`styled-components-grid`](https://github.com/jameslnewell/styled-components-grid) which both work well with this package.
+> 📘 [Change log](https://github.com/jameslnewell/styled-components-spacing/blob/master/CHANGELOG.md)
+
+> 👀 Have a look at [`styled-components-breakpoint`](https://github.com/jameslnewell/styled-components-breakpoint) and [`styled-components-grid`](https://github.com/jameslnewell/styled-components-grid) which both work well with this package.
 
 ## Installation
 
-    npm install --save styled-components styled-components-spacing
+NPM:
+
+```
+npm install styled-components-spacing
+```
+
+Yarn:
+
+```bash
+yarn add styled-components-spacing
+```
 
 ## Usage
-
-> [Examples](https://jameslnewell.github.io/styled-components-spacing/)
 
 ### Using the default spacings at the default breakpoints
 
@@ -195,7 +205,7 @@ Margin on all sides.
 
 **Parameters:**
 
-* `values` - Required. A `string` or `number` specifying the spacing key. May be a keyed `object` specifying spacing keys for multiple breakpoints.
+- `values` - Required. A `string` or `number` specifying the spacing key. May be a keyed `object` specifying spacing keys for multiple breakpoints.
 
 #### mx(values)
 
@@ -203,7 +213,7 @@ Margin on the left and right.
 
 **Parameters:**
 
-* `values` - Required. A `string` or `number` specifying the spacing key. May be a keyed `object` specifying spacing keys for multiple breakpoints.
+- `values` - Required. A `string` or `number` specifying the spacing key. May be a keyed `object` specifying spacing keys for multiple breakpoints.
 
 #### my(values)
 
@@ -211,7 +221,7 @@ Margin on the top and bottom.
 
 **Parameters:**
 
-* `values` - Required. A `string` or `number` specifying the spacing key. May be a keyed `object` specifying spacing keys for multiple breakpoints.
+- `values` - Required. A `string` or `number` specifying the spacing key. May be a keyed `object` specifying spacing keys for multiple breakpoints.
 
 #### mt(values)
 
@@ -219,7 +229,7 @@ Margin on the top.
 
 **Parameters:**
 
-* `values` - Required. A `string` or `number` specifying the spacing key. May be a keyed `object` specifying spacing keys for multiple breakpoints.
+- `values` - Required. A `string` or `number` specifying the spacing key. May be a keyed `object` specifying spacing keys for multiple breakpoints.
 
 #### mr(values)
 
@@ -227,7 +237,7 @@ Margin on the right.
 
 **Parameters:**
 
-* `values` - Required. A `string` or `number` specifying the spacing key. May be a keyed `object` specifying spacing keys for multiple breakpoints.
+- `values` - Required. A `string` or `number` specifying the spacing key. May be a keyed `object` specifying spacing keys for multiple breakpoints.
 
 #### mb(values)
 
@@ -235,7 +245,7 @@ Margin on the bottom.
 
 **Parameters:**
 
-* `values` - Required. A `string` or `number` specifying the spacing key. May be a keyed `object` specifying spacing keys for multiple breakpoints.
+- `values` - Required. A `string` or `number` specifying the spacing key. May be a keyed `object` specifying spacing keys for multiple breakpoints.
 
 #### ml(values)
 
@@ -243,7 +253,7 @@ Margin on the left.
 
 **Parameters:**
 
-* `values` - Required. A `string` or `number` specifying the spacing key. May be a keyed `object` specifying spacing keys for multiple breakpoints.
+- `values` - Required. A `string` or `number` specifying the spacing key. May be a keyed `object` specifying spacing keys for multiple breakpoints.
 
 ---
 
@@ -253,7 +263,7 @@ Padding on all sides.
 
 **Parameters:**
 
-* `values` - Required. A `string` or `number` specifying the spacing key. May be a keyed `object` specifying spacing keys for multiple breakpoints.
+- `values` - Required. A `string` or `number` specifying the spacing key. May be a keyed `object` specifying spacing keys for multiple breakpoints.
 
 #### px(values)
 
@@ -261,7 +271,7 @@ Padding on the left and right.
 
 **Parameters:**
 
-* `values` - Required. A `string` or `number` specifying the spacing key. May be a keyed `object` specifying spacing keys for multiple breakpoints.
+- `values` - Required. A `string` or `number` specifying the spacing key. May be a keyed `object` specifying spacing keys for multiple breakpoints.
 
 #### py(values)
 
@@ -269,7 +279,7 @@ Padding on the top and bottom.
 
 **Parameters:**
 
-* `values` - Required. A `string` or `number` specifying the spacing key. May be a keyed `object` specifying spacing keys for multiple breakpoints.
+- `values` - Required. A `string` or `number` specifying the spacing key. May be a keyed `object` specifying spacing keys for multiple breakpoints.
 
 #### pt(values)
 
@@ -277,7 +287,7 @@ Padding on the top.
 
 **Parameters:**
 
-* `values` - Required. A `string` or `number` specifying the spacing key. May be a keyed `object` specifying spacing keys for multiple breakpoints.
+- `values` - Required. A `string` or `number` specifying the spacing key. May be a keyed `object` specifying spacing keys for multiple breakpoints.
 
 #### pr(values)
 
@@ -285,7 +295,7 @@ Padding on the right.
 
 **Parameters:**
 
-* `values` - Required. A `string` or `number` specifying the spacing key. May be a keyed `object` specifying spacing keys for multiple breakpoints.
+- `values` - Required. A `string` or `number` specifying the spacing key. May be a keyed `object` specifying spacing keys for multiple breakpoints.
 
 #### pb(values)
 
@@ -293,7 +303,7 @@ Padding on the bottom.
 
 **Parameters:**
 
-* `values` - Required. A `string` or `number` specifying the spacing key. May be a keyed `object` specifying spacing keys for multiple breakpoints.
+- `values` - Required. A `string` or `number` specifying the spacing key. May be a keyed `object` specifying spacing keys for multiple breakpoints.
 
 #### pl(values)
 
@@ -301,7 +311,7 @@ Padding on the left.
 
 **Parameters:**
 
-* `values` - Required. A `string` or `number` specifying the spacing key. May be a keyed `object` specifying spacing keys for multiple breakpoints.
+- `values` - Required. A `string` or `number` specifying the spacing key. May be a keyed `object` specifying spacing keys for multiple breakpoints.
 
 ## Defaults
 

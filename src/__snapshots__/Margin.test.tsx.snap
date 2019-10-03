@@ -5,38 +5,38 @@ exports[`Margin all it should have a different margin for all breakpoints when t
   margin: 0;
 }
 
-@media (min-width:46.0625em) {
+@media screen and (min-width:46.0625em) {
   .c0 {
     margin: 0.5rem;
   }
 }
 
-@media (min-width:64.0625em) {
+@media screen and (min-width:74.6875em) {
   .c0 {
     margin: 2rem;
   }
 }
 
 <div
-  className="c0"
+  class="c0"
 />
 `;
 
 exports[`Margin all it should have a different margin for some breakpoints when the prop is passed 1`] = `
-@media (min-width:46.0625em) {
+@media screen and (min-width:46.0625em) {
   .c0 {
     margin: 0.5rem;
   }
 }
 
-@media (min-width:64.0625em) {
+@media screen and (min-width:74.6875em) {
   .c0 {
     margin: 2rem;
   }
 }
 
 <div
-  className="c0"
+  class="c0"
 />
 `;
 
@@ -46,7 +46,7 @@ exports[`Margin all it should have a single margin for all breakpoints when the 
 }
 
 <div
-  className="c0"
+  class="c0"
 />
 `;
 
@@ -55,38 +55,38 @@ exports[`Margin bottom it should have a different margin for all breakpoints whe
   margin-bottom: 0;
 }
 
-@media (min-width:46.0625em) {
+@media screen and (min-width:46.0625em) {
   .c0 {
     margin-bottom: 0.5rem;
   }
 }
 
-@media (min-width:64.0625em) {
+@media screen and (min-width:74.6875em) {
   .c0 {
     margin-bottom: 2rem;
   }
 }
 
 <div
-  className="c0"
+  class="c0"
 />
 `;
 
 exports[`Margin bottom it should have a different margin for some breakpoints when the prop is passed 1`] = `
-@media (min-width:46.0625em) {
+@media screen and (min-width:46.0625em) {
   .c0 {
     margin-bottom: 0.5rem;
   }
 }
 
-@media (min-width:64.0625em) {
+@media screen and (min-width:74.6875em) {
   .c0 {
     margin-bottom: 2rem;
   }
 }
 
 <div
-  className="c0"
+  class="c0"
 />
 `;
 
@@ -96,7 +96,7 @@ exports[`Margin bottom it should have a single margin for all breakpoints when t
 }
 
 <div
-  className="c0"
+  class="c0"
 />
 `;
 
@@ -106,14 +106,14 @@ exports[`Margin horizontal it should have a different margin for all breakpoints
   margin-right: 0;
 }
 
-@media (min-width:46.0625em) {
+@media screen and (min-width:46.0625em) {
   .c0 {
     margin-left: 0.5rem;
     margin-right: 0.5rem;
   }
 }
 
-@media (min-width:64.0625em) {
+@media screen and (min-width:74.6875em) {
   .c0 {
     margin-left: 2rem;
     margin-right: 2rem;
@@ -121,19 +121,19 @@ exports[`Margin horizontal it should have a different margin for all breakpoints
 }
 
 <div
-  className="c0"
+  class="c0"
 />
 `;
 
 exports[`Margin horizontal it should have a different margin for some breakpoints when the prop is passed 1`] = `
-@media (min-width:46.0625em) {
+@media screen and (min-width:46.0625em) {
   .c0 {
     margin-left: 0.5rem;
     margin-right: 0.5rem;
   }
 }
 
-@media (min-width:64.0625em) {
+@media screen and (min-width:74.6875em) {
   .c0 {
     margin-left: 2rem;
     margin-right: 2rem;
@@ -141,7 +141,7 @@ exports[`Margin horizontal it should have a different margin for some breakpoint
 }
 
 <div
-  className="c0"
+  class="c0"
 />
 `;
 
@@ -152,7 +152,7 @@ exports[`Margin horizontal it should have a single margin for all breakpoints wh
 }
 
 <div
-  className="c0"
+  class="c0"
 />
 `;
 
@@ -162,13 +162,13 @@ exports[`Margin inline it should be set when the prop is true 1`] = `
 }
 
 <div
-  className="c0"
+  class="c0"
 />
 `;
 
 exports[`Margin it should have no styles when no props are passed 1`] = `
 <div
-  className=""
+  class=""
 />
 `;
 
@@ -177,38 +177,38 @@ exports[`Margin left it should have a different margin for all breakpoints when 
   margin-left: 0;
 }
 
-@media (min-width:46.0625em) {
+@media screen and (min-width:46.0625em) {
   .c0 {
     margin-left: 0.5rem;
   }
 }
 
-@media (min-width:64.0625em) {
+@media screen and (min-width:74.6875em) {
   .c0 {
     margin-left: 2rem;
   }
 }
 
 <div
-  className="c0"
+  class="c0"
 />
 `;
 
 exports[`Margin left it should have a different margin for some breakpoints when the prop is passed 1`] = `
-@media (min-width:46.0625em) {
+@media screen and (min-width:46.0625em) {
   .c0 {
     margin-left: 0.5rem;
   }
 }
 
-@media (min-width:64.0625em) {
+@media screen and (min-width:74.6875em) {
   .c0 {
     margin-left: 2rem;
   }
 }
 
 <div
-  className="c0"
+  class="c0"
 />
 `;
 
@@ -218,7 +218,7 @@ exports[`Margin left it should have a single margin for all breakpoints when the
 }
 
 <div
-  className="c0"
+  class="c0"
 />
 `;
 
@@ -227,38 +227,38 @@ exports[`Margin right it should have a different margin for all breakpoints when
   margin-right: 0;
 }
 
-@media (min-width:46.0625em) {
+@media screen and (min-width:46.0625em) {
   .c0 {
     margin-right: 0.5rem;
   }
 }
 
-@media (min-width:64.0625em) {
+@media screen and (min-width:74.6875em) {
   .c0 {
     margin-right: 2rem;
   }
 }
 
 <div
-  className="c0"
+  class="c0"
 />
 `;
 
 exports[`Margin right it should have a different margin for some breakpoints when the prop is passed 1`] = `
-@media (min-width:46.0625em) {
+@media screen and (min-width:46.0625em) {
   .c0 {
     margin-right: 0.5rem;
   }
 }
 
-@media (min-width:64.0625em) {
+@media screen and (min-width:74.6875em) {
   .c0 {
     margin-right: 2rem;
   }
 }
 
 <div
-  className="c0"
+  class="c0"
 />
 `;
 
@@ -268,7 +268,7 @@ exports[`Margin right it should have a single margin for all breakpoints when th
 }
 
 <div
-  className="c0"
+  class="c0"
 />
 `;
 
@@ -277,38 +277,38 @@ exports[`Margin top it should have a different margin for all breakpoints when t
   margin-top: 0;
 }
 
-@media (min-width:46.0625em) {
+@media screen and (min-width:46.0625em) {
   .c0 {
     margin-top: 0.5rem;
   }
 }
 
-@media (min-width:64.0625em) {
+@media screen and (min-width:74.6875em) {
   .c0 {
     margin-top: 2rem;
   }
 }
 
 <div
-  className="c0"
+  class="c0"
 />
 `;
 
 exports[`Margin top it should have a different margin for some breakpoints when the prop is passed 1`] = `
-@media (min-width:46.0625em) {
+@media screen and (min-width:46.0625em) {
   .c0 {
     margin-top: 0.5rem;
   }
 }
 
-@media (min-width:64.0625em) {
+@media screen and (min-width:74.6875em) {
   .c0 {
     margin-top: 2rem;
   }
 }
 
 <div
-  className="c0"
+  class="c0"
 />
 `;
 
@@ -318,7 +318,7 @@ exports[`Margin top it should have a single margin for all breakpoints when the 
 }
 
 <div
-  className="c0"
+  class="c0"
 />
 `;
 
@@ -328,14 +328,14 @@ exports[`Margin vertical it should have a different margin for all breakpoints w
   margin-bottom: 0;
 }
 
-@media (min-width:46.0625em) {
+@media screen and (min-width:46.0625em) {
   .c0 {
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
   }
 }
 
-@media (min-width:64.0625em) {
+@media screen and (min-width:74.6875em) {
   .c0 {
     margin-top: 2rem;
     margin-bottom: 2rem;
@@ -343,19 +343,19 @@ exports[`Margin vertical it should have a different margin for all breakpoints w
 }
 
 <div
-  className="c0"
+  class="c0"
 />
 `;
 
 exports[`Margin vertical it should have a different margin for some breakpoints when the prop is passed 1`] = `
-@media (min-width:46.0625em) {
+@media screen and (min-width:46.0625em) {
   .c0 {
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
   }
 }
 
-@media (min-width:64.0625em) {
+@media screen and (min-width:74.6875em) {
   .c0 {
     margin-top: 2rem;
     margin-bottom: 2rem;
@@ -363,7 +363,7 @@ exports[`Margin vertical it should have a different margin for some breakpoints 
 }
 
 <div
-  className="c0"
+  class="c0"
 />
 `;
 
@@ -374,6 +374,6 @@ exports[`Margin vertical it should have a single margin for all breakpoints when
 }
 
 <div
-  className="c0"
+  class="c0"
 />
 `;

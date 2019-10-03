@@ -5,38 +5,38 @@ exports[`Padding all it should have a different padding for all breakpoints when
   padding: 0;
 }
 
-@media (min-width:46.0625em) {
+@media screen and (min-width:46.0625em) {
   .c0 {
     padding: 0.5rem;
   }
 }
 
-@media (min-width:64.0625em) {
+@media screen and (min-width:74.6875em) {
   .c0 {
     padding: 2rem;
   }
 }
 
 <div
-  className="c0"
+  class="c0"
 />
 `;
 
 exports[`Padding all it should have a different padding for some breakpoints when the prop is passed 1`] = `
-@media (min-width:46.0625em) {
+@media screen and (min-width:46.0625em) {
   .c0 {
     padding: 0.5rem;
   }
 }
 
-@media (min-width:64.0625em) {
+@media screen and (min-width:74.6875em) {
   .c0 {
     padding: 2rem;
   }
 }
 
 <div
-  className="c0"
+  class="c0"
 />
 `;
 
@@ -46,7 +46,7 @@ exports[`Padding all it should have a single padding for all breakpoints when th
 }
 
 <div
-  className="c0"
+  class="c0"
 />
 `;
 
@@ -55,38 +55,38 @@ exports[`Padding bottom it should have a different padding for all breakpoints w
   padding-bottom: 0;
 }
 
-@media (min-width:46.0625em) {
+@media screen and (min-width:46.0625em) {
   .c0 {
     padding-bottom: 0.5rem;
   }
 }
 
-@media (min-width:64.0625em) {
+@media screen and (min-width:74.6875em) {
   .c0 {
     padding-bottom: 2rem;
   }
 }
 
 <div
-  className="c0"
+  class="c0"
 />
 `;
 
 exports[`Padding bottom it should have a different padding for some breakpoints when the prop is passed 1`] = `
-@media (min-width:46.0625em) {
+@media screen and (min-width:46.0625em) {
   .c0 {
     padding-bottom: 0.5rem;
   }
 }
 
-@media (min-width:64.0625em) {
+@media screen and (min-width:74.6875em) {
   .c0 {
     padding-bottom: 2rem;
   }
 }
 
 <div
-  className="c0"
+  class="c0"
 />
 `;
 
@@ -96,7 +96,7 @@ exports[`Padding bottom it should have a single padding for all breakpoints when
 }
 
 <div
-  className="c0"
+  class="c0"
 />
 `;
 
@@ -106,14 +106,14 @@ exports[`Padding horizontal it should have a different padding for all breakpoin
   padding-right: 0;
 }
 
-@media (min-width:46.0625em) {
+@media screen and (min-width:46.0625em) {
   .c0 {
     padding-left: 0.5rem;
     padding-right: 0.5rem;
   }
 }
 
-@media (min-width:64.0625em) {
+@media screen and (min-width:74.6875em) {
   .c0 {
     padding-left: 2rem;
     padding-right: 2rem;
@@ -121,19 +121,19 @@ exports[`Padding horizontal it should have a different padding for all breakpoin
 }
 
 <div
-  className="c0"
+  class="c0"
 />
 `;
 
 exports[`Padding horizontal it should have a different padding for some breakpoints when the prop is passed 1`] = `
-@media (min-width:46.0625em) {
+@media screen and (min-width:46.0625em) {
   .c0 {
     padding-left: 0.5rem;
     padding-right: 0.5rem;
   }
 }
 
-@media (min-width:64.0625em) {
+@media screen and (min-width:74.6875em) {
   .c0 {
     padding-left: 2rem;
     padding-right: 2rem;
@@ -141,7 +141,7 @@ exports[`Padding horizontal it should have a different padding for some breakpoi
 }
 
 <div
-  className="c0"
+  class="c0"
 />
 `;
 
@@ -152,7 +152,7 @@ exports[`Padding horizontal it should have a single padding for all breakpoints 
 }
 
 <div
-  className="c0"
+  class="c0"
 />
 `;
 
@@ -162,13 +162,13 @@ exports[`Padding inline it should be set when the prop is true 1`] = `
 }
 
 <div
-  className="c0"
+  class="c0"
 />
 `;
 
 exports[`Padding it should have no styles when no props are passed 1`] = `
 <div
-  className=""
+  class=""
 />
 `;
 
@@ -177,38 +177,38 @@ exports[`Padding left it should have a different padding for all breakpoints whe
   padding-left: 0;
 }
 
-@media (min-width:46.0625em) {
+@media screen and (min-width:46.0625em) {
   .c0 {
     padding-left: 0.5rem;
   }
 }
 
-@media (min-width:64.0625em) {
+@media screen and (min-width:74.6875em) {
   .c0 {
     padding-left: 2rem;
   }
 }
 
 <div
-  className="c0"
+  class="c0"
 />
 `;
 
 exports[`Padding left it should have a different padding for some breakpoints when the prop is passed 1`] = `
-@media (min-width:46.0625em) {
+@media screen and (min-width:46.0625em) {
   .c0 {
     padding-left: 0.5rem;
   }
 }
 
-@media (min-width:64.0625em) {
+@media screen and (min-width:74.6875em) {
   .c0 {
     padding-left: 2rem;
   }
 }
 
 <div
-  className="c0"
+  class="c0"
 />
 `;
 
@@ -218,7 +218,7 @@ exports[`Padding left it should have a single padding for all breakpoints when t
 }
 
 <div
-  className="c0"
+  class="c0"
 />
 `;
 
@@ -227,38 +227,38 @@ exports[`Padding right it should have a different padding for all breakpoints wh
   padding-right: 0;
 }
 
-@media (min-width:46.0625em) {
+@media screen and (min-width:46.0625em) {
   .c0 {
     padding-right: 0.5rem;
   }
 }
 
-@media (min-width:64.0625em) {
+@media screen and (min-width:74.6875em) {
   .c0 {
     padding-right: 2rem;
   }
 }
 
 <div
-  className="c0"
+  class="c0"
 />
 `;
 
 exports[`Padding right it should have a different padding for some breakpoints when the prop is passed 1`] = `
-@media (min-width:46.0625em) {
+@media screen and (min-width:46.0625em) {
   .c0 {
     padding-right: 0.5rem;
   }
 }
 
-@media (min-width:64.0625em) {
+@media screen and (min-width:74.6875em) {
   .c0 {
     padding-right: 2rem;
   }
 }
 
 <div
-  className="c0"
+  class="c0"
 />
 `;
 
@@ -268,7 +268,7 @@ exports[`Padding right it should have a single padding for all breakpoints when 
 }
 
 <div
-  className="c0"
+  class="c0"
 />
 `;
 
@@ -277,38 +277,38 @@ exports[`Padding top it should have a different padding for all breakpoints when
   padding-top: 0;
 }
 
-@media (min-width:46.0625em) {
+@media screen and (min-width:46.0625em) {
   .c0 {
     padding-top: 0.5rem;
   }
 }
 
-@media (min-width:64.0625em) {
+@media screen and (min-width:74.6875em) {
   .c0 {
     padding-top: 2rem;
   }
 }
 
 <div
-  className="c0"
+  class="c0"
 />
 `;
 
 exports[`Padding top it should have a different padding for some breakpoints when the prop is passed 1`] = `
-@media (min-width:46.0625em) {
+@media screen and (min-width:46.0625em) {
   .c0 {
     padding-top: 0.5rem;
   }
 }
 
-@media (min-width:64.0625em) {
+@media screen and (min-width:74.6875em) {
   .c0 {
     padding-top: 2rem;
   }
 }
 
 <div
-  className="c0"
+  class="c0"
 />
 `;
 
@@ -318,7 +318,7 @@ exports[`Padding top it should have a single padding for all breakpoints when th
 }
 
 <div
-  className="c0"
+  class="c0"
 />
 `;
 
@@ -328,14 +328,14 @@ exports[`Padding vertical it should have a different padding for all breakpoints
   padding-bottom: 0;
 }
 
-@media (min-width:46.0625em) {
+@media screen and (min-width:46.0625em) {
   .c0 {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
   }
 }
 
-@media (min-width:64.0625em) {
+@media screen and (min-width:74.6875em) {
   .c0 {
     padding-top: 2rem;
     padding-bottom: 2rem;
@@ -343,19 +343,19 @@ exports[`Padding vertical it should have a different padding for all breakpoints
 }
 
 <div
-  className="c0"
+  class="c0"
 />
 `;
 
 exports[`Padding vertical it should have a different padding for some breakpoints when the prop is passed 1`] = `
-@media (min-width:46.0625em) {
+@media screen and (min-width:46.0625em) {
   .c0 {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
   }
 }
 
-@media (min-width:64.0625em) {
+@media screen and (min-width:74.6875em) {
   .c0 {
     padding-top: 2rem;
     padding-bottom: 2rem;
@@ -363,7 +363,7 @@ exports[`Padding vertical it should have a different padding for some breakpoint
 }
 
 <div
-  className="c0"
+  class="c0"
 />
 `;
 
@@ -374,6 +374,6 @@ exports[`Padding vertical it should have a single padding for all breakpoints wh
 }
 
 <div
-  className="c0"
+  class="c0"
 />
 `;

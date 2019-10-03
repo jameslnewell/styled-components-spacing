@@ -1,5 +1,13 @@
 ## Change log
 
+### 4.0.0
+
+- deprecated the `Margin` and `Padding` components for a new `Spacing` component which combines both margin and padding
+- added aliases for the longer form of the mixin names e.g. for there `mt` you could use `marginTop`
+- added `createMarginX`, `createPaddingX`, etc methods for creating static mixins
+- added `marginProps` and `paddingProps` methods for creating `Box` type components
+- rewrote it in typescript
+
 ### 3.1.2
 
 - fix docs to reflect removed property ([#13](https://github.com/jameslnewell/styled-components-spacing/pull/13))

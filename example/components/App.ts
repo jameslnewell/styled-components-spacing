@@ -2,7 +2,7 @@
 import * as React from 'react';
 import styled, { injectGlobal, ThemeProvider } from 'styled-components';
 import breakpoint, { createStatic } from 'styled-components-breakpoint';
-import { Margin, Padding } from '../../src';
+import { Margin, Padding } from '../../../src';
 
 const DEFAULT_THEME = {
   breakpoints: {
@@ -163,7 +163,7 @@ const MarginInner = styled.div`
   background-color: #d7f2ba;
 `;
 
-const WrappedMargin = (props: { prop: string, values: { [string]: number }, children: React.Node }) => (
+const WrappedMargin = (props: { prop: string; values: { [string]: number }; children: React.Node }) => (
   <MarginOuter>
     <Margin {...{ [props.prop]: props.values }}>
       <MarginInner>
@@ -184,7 +184,7 @@ const PaddingInner = styled.div`
   ${innerStyles} background-color: #BDE4A8;
 `;
 
-const WrappedPadding = (props: { prop: string, values: { [string]: number }, children: React.Node }) => (
+const WrappedPadding = (props: { prop: string; values: { [string]: number }; children: React.Node }) => (
   <PaddingOuter>
     <Padding {...{ [props.prop]: props.values }}>
       <PaddingInner>
@@ -198,8 +198,8 @@ const WrappedPadding = (props: { prop: string, values: { [string]: number }, chi
 export type AppProps = {};
 
 export type AppState = {
-  theme: { [name: string]: mixed },
-  values: { [name: string]: number }
+  theme: { [name: string]: mixed };
+  values: { [name: string]: number };
 };
 
 export default class App extends React.Component<AppProps, AppState> {
