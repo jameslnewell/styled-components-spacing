@@ -33,27 +33,33 @@ type Values =
   | ValueOrValueMap<DefaultBreakpointName, DefaultSpacingName>
   | ValueOrValueMap<DefaultBreakpointName, CustomSpacingName>;
 
-const WrappedMargin = (props: { prop: keyof MarginProps; values: Values; children: React.ReactNode }) => (
-  <MarginOuter>
-    <Spacing {...{ [props.prop]: props.values }}>
-      <MarginInner>
-        <BreakpointName />
-        <Code>{props.children}</Code>
-      </MarginInner>
-    </Spacing>
-  </MarginOuter>
-);
+const WrappedMargin = (props: { prop: keyof MarginProps; values: Values; children: React.ReactNode }) => {
+  const spacing = { [props.prop]: props.values };
+  return (
+    <MarginOuter>
+      <Spacing {...spacing}>
+        <MarginInner>
+          <BreakpointName />
+          <Code>{props.children}</Code>
+        </MarginInner>
+      </Spacing>
+    </MarginOuter>
+  );
+};
 
-const WrappedPadding = (props: { prop: keyof PaddingProps; values: Values; children: React.ReactNode }) => (
-  <PaddingOuter>
-    <Spacing {...{ [props.prop]: props.values }}>
-      <PaddingInner>
-        <BreakpointName />
-        <Code>{props.children}</Code>
-      </PaddingInner>
-    </Spacing>
-  </PaddingOuter>
-);
+const WrappedPadding = (props: { prop: keyof PaddingProps; values: Values; children: React.ReactNode }) => {
+  const spacing = { [props.prop]: props.values };
+  return (
+    <PaddingOuter>
+      <Spacing {...spacing}>
+        <PaddingInner>
+          <BreakpointName />
+          <Code>{props.children}</Code>
+        </PaddingInner>
+      </Spacing>
+    </PaddingOuter>
+  );
+};
 
 export const App: React.FC = () => {
   const [theme, setTheme] = React.useState<DefaultTheme>(defaultTheme);
