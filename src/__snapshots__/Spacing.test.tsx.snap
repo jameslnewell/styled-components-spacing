@@ -1,0 +1,741 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Spacing inline it should be set when the prop is true 1`] = `
+.c0 {
+  display: inline-block;
+}
+
+<div
+  class="c0"
+/>
+`;
+
+exports[`Spacing it should have no styles when no props are passed 1`] = `
+<div
+  class=""
+/>
+`;
+
+exports[`Spacing margin it should have a different margin for all breakpoints when the prop is passed 1`] = `
+.c0 {
+  margin: 0;
+}
+
+@media screen and (min-width:46.0625em) {
+  .c0 {
+    margin: 0.5rem;
+  }
+}
+
+@media screen and (min-width:74.6875em) {
+  .c0 {
+    margin: 2rem;
+  }
+}
+
+<div
+  class="c0"
+/>
+`;
+
+exports[`Spacing margin it should have a different margin for some breakpoints when the prop is passed 1`] = `
+@media screen and (min-width:46.0625em) {
+  .c0 {
+    margin: 0.5rem;
+  }
+}
+
+@media screen and (min-width:74.6875em) {
+  .c0 {
+    margin: 2rem;
+  }
+}
+
+<div
+  class="c0"
+/>
+`;
+
+exports[`Spacing margin it should have a single margin for all breakpoints when the prop is passed 1`] = `
+.c0 {
+  margin: 0.25rem;
+}
+
+<div
+  class="c0"
+/>
+`;
+
+exports[`Spacing marginBottom it should have a different margin for all breakpoints when the prop is passed 1`] = `
+.c0 {
+  margin-bottom: 0;
+}
+
+@media screen and (min-width:46.0625em) {
+  .c0 {
+    margin-bottom: 0.5rem;
+  }
+}
+
+@media screen and (min-width:74.6875em) {
+  .c0 {
+    margin-bottom: 2rem;
+  }
+}
+
+<div
+  class="c0"
+/>
+`;
+
+exports[`Spacing marginBottom it should have a different margin for some breakpoints when the prop is passed 1`] = `
+@media screen and (min-width:46.0625em) {
+  .c0 {
+    margin-bottom: 0.5rem;
+  }
+}
+
+@media screen and (min-width:74.6875em) {
+  .c0 {
+    margin-bottom: 2rem;
+  }
+}
+
+<div
+  class="c0"
+/>
+`;
+
+exports[`Spacing marginBottom it should have a single margin for all breakpoints when the prop is passed 1`] = `
+.c0 {
+  margin-bottom: 0.25rem;
+}
+
+<div
+  class="c0"
+/>
+`;
+
+exports[`Spacing marginLeft it should have a different margin for all breakpoints when the prop is passed 1`] = `
+.c0 {
+  margin-left: 0;
+}
+
+@media screen and (min-width:46.0625em) {
+  .c0 {
+    margin-left: 0.5rem;
+  }
+}
+
+@media screen and (min-width:74.6875em) {
+  .c0 {
+    margin-left: 2rem;
+  }
+}
+
+<div
+  class="c0"
+/>
+`;
+
+exports[`Spacing marginLeft it should have a different margin for some breakpoints when the prop is passed 1`] = `
+@media screen and (min-width:46.0625em) {
+  .c0 {
+    margin-left: 0.5rem;
+  }
+}
+
+@media screen and (min-width:74.6875em) {
+  .c0 {
+    margin-left: 2rem;
+  }
+}
+
+<div
+  class="c0"
+/>
+`;
+
+exports[`Spacing marginLeft it should have a single margin for all breakpoints when the prop is passed 1`] = `
+.c0 {
+  margin-left: 0.25rem;
+}
+
+<div
+  class="c0"
+/>
+`;
+
+exports[`Spacing marginRight it should have a different margin for all breakpoints when the prop is passed 1`] = `
+.c0 {
+  margin-right: 0;
+}
+
+@media screen and (min-width:46.0625em) {
+  .c0 {
+    margin-right: 0.5rem;
+  }
+}
+
+@media screen and (min-width:74.6875em) {
+  .c0 {
+    margin-right: 2rem;
+  }
+}
+
+<div
+  class="c0"
+/>
+`;
+
+exports[`Spacing marginRight it should have a different margin for some breakpoints when the prop is passed 1`] = `
+@media screen and (min-width:46.0625em) {
+  .c0 {
+    margin-right: 0.5rem;
+  }
+}
+
+@media screen and (min-width:74.6875em) {
+  .c0 {
+    margin-right: 2rem;
+  }
+}
+
+<div
+  class="c0"
+/>
+`;
+
+exports[`Spacing marginRight it should have a single margin for all breakpoints when the prop is passed 1`] = `
+.c0 {
+  margin-right: 0.25rem;
+}
+
+<div
+  class="c0"
+/>
+`;
+
+exports[`Spacing marginTop it should have a different margin for all breakpoints when the prop is passed 1`] = `
+.c0 {
+  margin-top: 0;
+}
+
+@media screen and (min-width:46.0625em) {
+  .c0 {
+    margin-top: 0.5rem;
+  }
+}
+
+@media screen and (min-width:74.6875em) {
+  .c0 {
+    margin-top: 2rem;
+  }
+}
+
+<div
+  class="c0"
+/>
+`;
+
+exports[`Spacing marginTop it should have a different margin for some breakpoints when the prop is passed 1`] = `
+@media screen and (min-width:46.0625em) {
+  .c0 {
+    margin-top: 0.5rem;
+  }
+}
+
+@media screen and (min-width:74.6875em) {
+  .c0 {
+    margin-top: 2rem;
+  }
+}
+
+<div
+  class="c0"
+/>
+`;
+
+exports[`Spacing marginTop it should have a single margin for all breakpoints when the prop is passed 1`] = `
+.c0 {
+  margin-top: 0.25rem;
+}
+
+<div
+  class="c0"
+/>
+`;
+
+exports[`Spacing marginX it should have a different margin for all breakpoints when the prop is passed 1`] = `
+.c0 {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+@media screen and (min-width:46.0625em) {
+  .c0 {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+}
+
+@media screen and (min-width:74.6875em) {
+  .c0 {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+}
+
+<div
+  class="c0"
+/>
+`;
+
+exports[`Spacing marginX it should have a different margin for some breakpoints when the prop is passed 1`] = `
+@media screen and (min-width:46.0625em) {
+  .c0 {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+}
+
+@media screen and (min-width:74.6875em) {
+  .c0 {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+}
+
+<div
+  class="c0"
+/>
+`;
+
+exports[`Spacing marginX it should have a single margin for all breakpoints when the prop is passed 1`] = `
+.c0 {
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+}
+
+<div
+  class="c0"
+/>
+`;
+
+exports[`Spacing marginY it should have a different margin for all breakpoints when the prop is passed 1`] = `
+.c0 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+@media screen and (min-width:46.0625em) {
+  .c0 {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+}
+
+@media screen and (min-width:74.6875em) {
+  .c0 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+}
+
+<div
+  class="c0"
+/>
+`;
+
+exports[`Spacing marginY it should have a different margin for some breakpoints when the prop is passed 1`] = `
+@media screen and (min-width:46.0625em) {
+  .c0 {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+}
+
+@media screen and (min-width:74.6875em) {
+  .c0 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+}
+
+<div
+  class="c0"
+/>
+`;
+
+exports[`Spacing marginY it should have a single margin for all breakpoints when the prop is passed 1`] = `
+.c0 {
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
+<div
+  class="c0"
+/>
+`;
+
+exports[`Spacing padding it should have a different padding for all breakpoints when the prop is passed 1`] = `
+.c0 {
+  padding: 0;
+}
+
+@media screen and (min-width:46.0625em) {
+  .c0 {
+    padding: 0.5rem;
+  }
+}
+
+@media screen and (min-width:74.6875em) {
+  .c0 {
+    padding: 2rem;
+  }
+}
+
+<div
+  class="c0"
+/>
+`;
+
+exports[`Spacing padding it should have a different padding for some breakpoints when the prop is passed 1`] = `
+@media screen and (min-width:46.0625em) {
+  .c0 {
+    padding: 0.5rem;
+  }
+}
+
+@media screen and (min-width:74.6875em) {
+  .c0 {
+    padding: 2rem;
+  }
+}
+
+<div
+  class="c0"
+/>
+`;
+
+exports[`Spacing padding it should have a single padding for all breakpoints when the prop is passed 1`] = `
+.c0 {
+  padding: 0.25rem;
+}
+
+<div
+  class="c0"
+/>
+`;
+
+exports[`Spacing paddingBottom it should have a different padding for all breakpoints when the prop is passed 1`] = `
+.c0 {
+  padding-bottom: 0;
+}
+
+@media screen and (min-width:46.0625em) {
+  .c0 {
+    padding-bottom: 0.5rem;
+  }
+}
+
+@media screen and (min-width:74.6875em) {
+  .c0 {
+    padding-bottom: 2rem;
+  }
+}
+
+<div
+  class="c0"
+/>
+`;
+
+exports[`Spacing paddingBottom it should have a different padding for some breakpoints when the prop is passed 1`] = `
+@media screen and (min-width:46.0625em) {
+  .c0 {
+    padding-bottom: 0.5rem;
+  }
+}
+
+@media screen and (min-width:74.6875em) {
+  .c0 {
+    padding-bottom: 2rem;
+  }
+}
+
+<div
+  class="c0"
+/>
+`;
+
+exports[`Spacing paddingBottom it should have a single padding for all breakpoints when the prop is passed 1`] = `
+.c0 {
+  padding-bottom: 0.25rem;
+}
+
+<div
+  class="c0"
+/>
+`;
+
+exports[`Spacing paddingLeft it should have a different padding for all breakpoints when the prop is passed 1`] = `
+.c0 {
+  padding-left: 0;
+}
+
+@media screen and (min-width:46.0625em) {
+  .c0 {
+    padding-left: 0.5rem;
+  }
+}
+
+@media screen and (min-width:74.6875em) {
+  .c0 {
+    padding-left: 2rem;
+  }
+}
+
+<div
+  class="c0"
+/>
+`;
+
+exports[`Spacing paddingLeft it should have a different padding for some breakpoints when the prop is passed 1`] = `
+@media screen and (min-width:46.0625em) {
+  .c0 {
+    padding-left: 0.5rem;
+  }
+}
+
+@media screen and (min-width:74.6875em) {
+  .c0 {
+    padding-left: 2rem;
+  }
+}
+
+<div
+  class="c0"
+/>
+`;
+
+exports[`Spacing paddingLeft it should have a single padding for all breakpoints when the prop is passed 1`] = `
+.c0 {
+  padding-left: 0.25rem;
+}
+
+<div
+  class="c0"
+/>
+`;
+
+exports[`Spacing paddingRight it should have a different padding for all breakpoints when the prop is passed 1`] = `
+.c0 {
+  padding-right: 0;
+}
+
+@media screen and (min-width:46.0625em) {
+  .c0 {
+    padding-right: 0.5rem;
+  }
+}
+
+@media screen and (min-width:74.6875em) {
+  .c0 {
+    padding-right: 2rem;
+  }
+}
+
+<div
+  class="c0"
+/>
+`;
+
+exports[`Spacing paddingRight it should have a different padding for some breakpoints when the prop is passed 1`] = `
+@media screen and (min-width:46.0625em) {
+  .c0 {
+    padding-right: 0.5rem;
+  }
+}
+
+@media screen and (min-width:74.6875em) {
+  .c0 {
+    padding-right: 2rem;
+  }
+}
+
+<div
+  class="c0"
+/>
+`;
+
+exports[`Spacing paddingRight it should have a single padding for all breakpoints when the prop is passed 1`] = `
+.c0 {
+  padding-right: 0.25rem;
+}
+
+<div
+  class="c0"
+/>
+`;
+
+exports[`Spacing paddingTop it should have a different padding for all breakpoints when the prop is passed 1`] = `
+.c0 {
+  padding-top: 0;
+}
+
+@media screen and (min-width:46.0625em) {
+  .c0 {
+    padding-top: 0.5rem;
+  }
+}
+
+@media screen and (min-width:74.6875em) {
+  .c0 {
+    padding-top: 2rem;
+  }
+}
+
+<div
+  class="c0"
+/>
+`;
+
+exports[`Spacing paddingTop it should have a different padding for some breakpoints when the prop is passed 1`] = `
+@media screen and (min-width:46.0625em) {
+  .c0 {
+    padding-top: 0.5rem;
+  }
+}
+
+@media screen and (min-width:74.6875em) {
+  .c0 {
+    padding-top: 2rem;
+  }
+}
+
+<div
+  class="c0"
+/>
+`;
+
+exports[`Spacing paddingTop it should have a single padding for all breakpoints when the prop is passed 1`] = `
+.c0 {
+  padding-top: 0.25rem;
+}
+
+<div
+  class="c0"
+/>
+`;
+
+exports[`Spacing paddingX it should have a different padding for all breakpoints when the prop is passed 1`] = `
+.c0 {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+@media screen and (min-width:46.0625em) {
+  .c0 {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+}
+
+@media screen and (min-width:74.6875em) {
+  .c0 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+<div
+  class="c0"
+/>
+`;
+
+exports[`Spacing paddingX it should have a different padding for some breakpoints when the prop is passed 1`] = `
+@media screen and (min-width:46.0625em) {
+  .c0 {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+}
+
+@media screen and (min-width:74.6875em) {
+  .c0 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+<div
+  class="c0"
+/>
+`;
+
+exports[`Spacing paddingX it should have a single padding for all breakpoints when the prop is passed 1`] = `
+.c0 {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+}
+
+<div
+  class="c0"
+/>
+`;
+
+exports[`Spacing paddingY it should have a different padding for all breakpoints when the prop is passed 1`] = `
+.c0 {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+@media screen and (min-width:46.0625em) {
+  .c0 {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+}
+
+@media screen and (min-width:74.6875em) {
+  .c0 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+}
+
+<div
+  class="c0"
+/>
+`;
+
+exports[`Spacing paddingY it should have a different padding for some breakpoints when the prop is passed 1`] = `
+@media screen and (min-width:46.0625em) {
+  .c0 {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+}
+
+@media screen and (min-width:74.6875em) {
+  .c0 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+}
+
+<div
+  class="c0"
+/>
+`;
+
+exports[`Spacing paddingY it should have a single padding for all breakpoints when the prop is passed 1`] = `
+.c0 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
+<div
+  class="c0"
+/>
+`;
