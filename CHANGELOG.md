@@ -2,11 +2,21 @@
 
 ### 4.0.0
 
-- deprecated the `Margin` and `Padding` components for a new `Spacing` component which combines both margin and padding
-- added aliases for the longer form of the mixin names e.g. for there `mt` you could use `marginTop`
-- added `createMarginX`, `createPaddingX`, etc methods for creating static mixins
-- added `marginProps` and `paddingProps` methods for creating `Box` type components
-- rewrote it in typescript
+#### Breaking changes
+
+- Rewrote the library in Typescript. This is a huge enhancement for anyone using Typescript but for anyone using FlowType, you will lose typings.
+
+#### Additions
+
+- Increased the supported version range for `styled-components` to support `v4`
+- added aliases for the longer form of the mixin names e.g. for there `mt` you can now also use `marginTop`
+- added `createMarginTop`, `createPaddingTop` and similar methods for creating mixins for breakpoints not defined by the theme
+- added `marginProps` and `paddingProps` methods for creating `Box`-like components
+- Added a license file
+
+## Deprecations
+
+- deprecated the `Margin` and `Padding` components for a new `Spacing` component which combines margin and padding in a single component
 
 ### 3.1.2
 
