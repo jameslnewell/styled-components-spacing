@@ -1,6 +1,6 @@
 {
   "name": "styled-components-spacing",
-  "version": "4.0.0-preview.1",
+  "version": "4.0.0-preview.2",
   "description": "Responsive margin and padding utilities for `styled-components`💅.",
   "keywords": [
     "react",
@@ -21,7 +21,7 @@
   "module": "dist/index.m.js",
   "types": "dist/index.d.ts",
   "dependencies": {
-    "styled-components-breakpoint": "^3.0.0-preview.12"
+    "styled-components-breakpoint": "^3.0.0-preview.13"
   },
   "peerDependencies": {
     "@types/styled-components": "^4.1.19",
