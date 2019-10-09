@@ -1,7 +1,25 @@
 import styled from 'styled-components';
 import { ThemedValueOrValueMap } from './types';
-import { m, mx, my, mt, mr, mb, ml, p, px, py, pt, pr, pb, pl } from './themed';
-import { MarginProps, marginProps, PaddingProps, paddingProps } from './props';
+import {
+  ThemedMarginProps,
+  ThemedPaddingProps,
+  m,
+  mx,
+  my,
+  mt,
+  mr,
+  mb,
+  ml,
+  p,
+  px,
+  py,
+  pt,
+  pr,
+  pb,
+  pl,
+  marginProps,
+  paddingProps
+} from './themed';
 
 interface InlineProps {
   inline?: boolean;
@@ -47,7 +65,7 @@ export const Padding = styled.div<DeprecatedSpacingProps>`
 
 Padding.displayName = 'Padding';
 
-export type SpacingProps = InlineProps & MarginProps & PaddingProps;
+export type SpacingProps = InlineProps & ThemedMarginProps & ThemedPaddingProps;
 
 export const Spacing = styled.div<SpacingProps>`
   ${inlineMixin}

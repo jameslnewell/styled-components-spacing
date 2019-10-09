@@ -54,7 +54,3 @@ export const customValues: ValueOrValueMap<ThemedBreakpointName, CustomSpacingNa
   tablet: 'md',
   desktop: 'lg'
 };
-
-// TODO: do demo of custom spacings but not custom breakpoints
-// TODO: createMarginProps createPaddingProps
-// TODO: look into issue with s-c-b types compiling down `infer` ahead of time without considering declaration merging

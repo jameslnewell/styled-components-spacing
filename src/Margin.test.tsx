@@ -3,7 +3,7 @@ import React from 'react';
 import { render } from '@testing-library/react';
 import { Margin } from './components';
 
-describe('Margin', () => {
+describe('<Margin/>', () => {
   it('it should have no styles when no props are passed', () => {
     const { container } = render(<Margin />);
     expect(container.firstChild).toMatchSnapshot();

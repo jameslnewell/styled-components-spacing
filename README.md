@@ -26,31 +26,43 @@ yarn add styled-components-spacing
 
 ## Usage
 
-### Using the default spacings at the default breakpoints
+### Using the themable mixins
 
 ```js
 import React from 'react';
-import { Margin, Padding } from 'styled-components-spacing';
+import styled from 'styled-components';
+import { marginY, paddingX } from 'styled-components-spacing';
+
+const HeroPanel = styled.div`
+  ${marginY({ mobile: 2, tablet: 4 })}
+  ${paddingX(6)};
+`;
+```
+
+### Using the themable component
+
+```js
+import React from 'react';
+import { Spacing } from 'styled-components-spacing';
 
 <HeroPanel>
-  <Padding all={{ mobile: 2, tablet: 4, desktop: 6 }}>
+  <Spacing margin={{ mobile: 2, tablet: 4, desktop: 6 }}>
     <Title>Hello World</Title>
     <SubTitle>You are on earth!</SubTitle>
-    <Margin top={1}>
+    <Spacing marginTop={1}>
       <Button>Blast off!</Button>
-    </Margin>
-  </Padding>
+    </Spacing>
+  </Spacing>
 </HeroPanel>;
 ```
 
-### Using custom spacings at custom breakpoints
+### Using custom breakpoints and spacings for the themable mixins and components
 
-Spacings and breakpoints can be customised using `ThemeProvider`. For example, to use the same breakpoints and spacings as [Bootstrap](https://getbootstrap.com/docs/4.0/layout/overview/#responsive-breakpoints), you can do so like this:
+The themable breakpoints and spacings can be customised using `ThemeProvider`. For example, to use the same breakpoints and spacings as [Bootstrap](https://getbootstrap.com/docs/4.0/layout/overview/#responsive-breakpoints), you can do so like this:
 
-```js
+```jsx
 import React from 'react';
 import { ThemeProvider } from 'styled-components';
-import { Margin, Padding } from 'styled-components-spacing';
 
 const theme = {
   breakpoints: {
@@ -70,263 +82,162 @@ const theme = {
   }
 };
 
-<ThemeProvider theme={theme}>
-  <HeroPanel>
-    <Padding all={{ sm: 1, lg: 2 }}>
-      <Title>Hello World</Title>
-      <SubTitle>You are on earth!</SubTitle>
-      <Margin top={1}>
-        <Button>Blast off!</Button>
-      </Margin>
-    </Padding>
-  </HeroPanel>
-</ThemeProvider>;
+<ThemeProvider theme={theme}>{/* ... */}</ThemeProvider>;
 ```
 
-### Using the mixins
+If you're using Typescript, you'll also need to define the breakpoints and spacings on the theme.
 
-```js
-import React from 'react';
+`styled.d.ts`
+
+```tsx
+import { DefaultTheme } from 'styled-components';
+
+declare module 'styled-components' {
+  export interface DefaultTheme {
+    breakpoints: {
+      [name in 'xs' | 'sm' | 'md' | 'lg' | 'xl']: number;
+    };
+    spacings: {
+      [name in 0 | 1 | 2 | 3 | 4 | 5]: string;
+    };
+  }
+}
+```
+
+### Using the mixin factories
+
+If your breakpoints and spacings don't need to be themable then you can use the static mixin factories.
+
+```jsx
 import styled from 'styled-components';
-import { my, px } from 'styled-components-spacing';
-
-const Panel = styled.div`
-  ${my({ mobile: 2, tablet: 4 })} ${px(6)};
-`;
-```
-
-## Components
-
-### &lt;Margin/&gt;
-
-#### all
-
-Margin on all sides.
-
-Optional. A `string` or `number` specifying the spacing key. May be a keyed `object` specifying spacing keys for multiple breakpoints.
-
-#### horizontal
-
-Margin on the left and right.
-
-Optional. A `string` or `number` specifying the spacing key. May be a keyed `object` specifying spacing keys for multiple breakpoints.
-
-#### vertical
-
-Margin on the top and bottom.
-
-Optional. A `string` or `number` specifying the spacing key. May be a keyed `object` specifying spacing keys for multiple breakpoints.
-
-#### top
-
-Margin on the top.
-
-Optional. A `string` or `number` specifying the spacing key. May be a keyed `object` specifying spacing keys for multiple breakpoints.
-
-#### bottom
-
-Margin on the bottom.
-
-Optional. A `string` or `number` specifying the spacing key. May be a keyed `object` specifying spacing keys for multiple breakpoints.
-
-#### left
-
-Margin on the left.
-
-Optional. A `string` or `number` specifying the spacing key. May be a keyed `object` specifying spacing keys for multiple breakpoints.
-
-#### right
-
-Margin on the right.
-
-Optional. A `string` or `number` specifying the spacing key. May be a keyed `object` specifying spacing keys for multiple breakpoints.
-
-#### inline
-
-Size the element to the width of its children.
-
-Optional. A `boolean`. Defaults to `false`.
-
-### &lt;Padding/&gt;
-
-#### all
-
-Padding on all sides.
-
-Optional. A `string` or `number` specifying the spacing key. May be a keyed `object` specifying spacing keys for multiple breakpoints.
-
-#### horizontal
-
-Padding on the left and right.
-
-Optional. A `string` or `number` specifying the spacing key. May be a keyed `object` specifying spacing keys for multiple breakpoints.
-
-#### vertical
-
-Padding on the top and bottom.
-
-Optional. A `string` or `number` specifying the spacing key. May be a keyed `object` specifying spacing keys for multiple breakpoints.
-
-#### top
-
-Padding on the top.
-
-Optional. A `string` or `number` specifying the spacing key. May be a keyed `object` specifying spacing keys for multiple breakpoints.
-
-#### bottom
-
-Padding on the bottom.
-
-Optional. A `string` or `number` specifying the spacing key. May be a keyed `object` specifying spacing keys for multiple breakpoints.
-
-#### left
-
-Padding on the left.
-
-Optional. A `string` or `number` specifying the spacing key. May be a keyed `object` specifying spacing keys for multiple breakpoints.
-
-#### right
-
-Padding on the right.
-
-Optional. A `string` or `number` specifying the spacing key. May be a keyed `object` specifying spacing keys for multiple breakpoints.
-
-#### inline
-
-Size the element to the width of its children.
-
-Optional. A `boolean`. Defaults to `false`.
-
-## Mixins
-
-#### m(values)
-
-Margin on all sides.
-
-**Parameters:**
-
-- `values` - Required. A `string` or `number` specifying the spacing key. May be a keyed `object` specifying spacing keys for multiple breakpoints.
-
-#### mx(values)
-
-Margin on the left and right.
-
-**Parameters:**
-
-- `values` - Required. A `string` or `number` specifying the spacing key. May be a keyed `object` specifying spacing keys for multiple breakpoints.
-
-#### my(values)
-
-Margin on the top and bottom.
-
-**Parameters:**
-
-- `values` - Required. A `string` or `number` specifying the spacing key. May be a keyed `object` specifying spacing keys for multiple breakpoints.
-
-#### mt(values)
-
-Margin on the top.
-
-**Parameters:**
-
-- `values` - Required. A `string` or `number` specifying the spacing key. May be a keyed `object` specifying spacing keys for multiple breakpoints.
-
-#### mr(values)
-
-Margin on the right.
-
-**Parameters:**
-
-- `values` - Required. A `string` or `number` specifying the spacing key. May be a keyed `object` specifying spacing keys for multiple breakpoints.
-
-#### mb(values)
-
-Margin on the bottom.
-
-**Parameters:**
-
-- `values` - Required. A `string` or `number` specifying the spacing key. May be a keyed `object` specifying spacing keys for multiple breakpoints.
-
-#### ml(values)
-
-Margin on the left.
-
-**Parameters:**
-
-- `values` - Required. A `string` or `number` specifying the spacing key. May be a keyed `object` specifying spacing keys for multiple breakpoints.
-
----
-
-#### p(values)
-
-Padding on all sides.
-
-**Parameters:**
-
-- `values` - Required. A `string` or `number` specifying the spacing key. May be a keyed `object` specifying spacing keys for multiple breakpoints.
-
-#### px(values)
-
-Padding on the left and right.
-
-**Parameters:**
-
-- `values` - Required. A `string` or `number` specifying the spacing key. May be a keyed `object` specifying spacing keys for multiple breakpoints.
-
-#### py(values)
-
-Padding on the top and bottom.
-
-**Parameters:**
-
-- `values` - Required. A `string` or `number` specifying the spacing key. May be a keyed `object` specifying spacing keys for multiple breakpoints.
-
-#### pt(values)
-
-Padding on the top.
-
-**Parameters:**
-
-- `values` - Required. A `string` or `number` specifying the spacing key. May be a keyed `object` specifying spacing keys for multiple breakpoints.
-
-#### pr(values)
-
-Padding on the right.
-
-**Parameters:**
-
-- `values` - Required. A `string` or `number` specifying the spacing key. May be a keyed `object` specifying spacing keys for multiple breakpoints.
-
-#### pb(values)
-
-Padding on the bottom.
-
-**Parameters:**
-
-- `values` - Required. A `string` or `number` specifying the spacing key. May be a keyed `object` specifying spacing keys for multiple breakpoints.
-
-#### pl(values)
-
-Padding on the left.
-
-**Parameters:**
-
-- `values` - Required. A `string` or `number` specifying the spacing key. May be a keyed `object` specifying spacing keys for multiple breakpoints.
-
-## Defaults
-
-```js
-{
+import { createMap } from 'styled-components-breakpoint';
+import { createMarginY, createPaddingX } from 'styled-components-spacing';
+
+const breakpoints = {
+  xs: 0,
+  sm: 576,
+  md: 768,
+  lg: 992,
+  xl: 1200
+};
+
+const spacing {
   0: '0',
   1: '0.25rem',
   2: '0.5rem',
   3: '1rem',
-  4: '2rem',
-  5: '4rem',
-  6: '8rem'
-}
+  4: '1.5rem',
+  5: '3rem'
+};
+
+const map = createMap(breakpoints);
+const marginY = createMarginY(map, spacings);
+const paddingX = createPaddingX(map, spacings);
+
+const HeroPanel = styled.div`
+  ${marginY({ xs: 2, md: 4 })}
+  ${paddingX(5)};
+`;
 ```
 
-## Rendering on a custom component
+## API
 
-This library no longer supports the `component` prop - if you wish to use a custom component with this library use [`.withComponent()`](https://www.styled-components.com/docs/api#withcomponent)
+### Margin mixins
+
+Themable mixins for margin.
+
+| Function             | Alias      | Description                   |
+| -------------------- | ---------- | ----------------------------- |
+| `margin(name)`       | `m(name)`  | Margin on all sides.          |
+| `marginY(name)`      | `my(name)` | Margin on the top and bottom. |
+| `marginX(name)`      | `mx(name)` | Margin on the left and right. |
+| `marginTop(name)`    | `mt(name)` | Margin on the top.            |
+| `marginRight(name)`  | `mr(name)` | Margin on the right.          |
+| `marginBottom(name)` | `mb(name)` | Margin on the bottom.         |
+| `marginLeft(name)`   | `ml(name)` | Margin on the left.           |
+
+> Where `name` is a `string` or `number` specifying the spacing name. May be a map `object` specifying spacing across various breakpoints.
+
+### Padding mixins
+
+Themable mixins for padding.
+
+| Function              | Alias      | Description                    |
+| --------------------- | ---------- | ------------------------------ |
+| `padding(name)`       | `mpsize)`  | Padding on all sides.          |
+| `paddingY(name)`      | `py(name)` | Padding on the top and bottom. |
+| `paddingX(name)`      | `px(name)` | Padding on the left and right. |
+| `paddingTop(name)`    | `pt(name)` | Padding on the top.            |
+| `paddingRight(name)`  | `pr(name)` | Padding on the right.          |
+| `paddingBottom(name)` | `pb(name)` | Padding on the bottom.         |
+| `paddingLeft(name)`   | `pl(name)` | Padding on the left.           |
+
+> Where `name` is a `string` or `number` specifying the spacing name. May be a map `object` specifying spacing across various breakpoints.
+
+### &lt;Spacing/&gt; components
+
+A themable component for margin and padding.
+
+| Property        | Alias | Type                             | Default | Description                                    |
+| --------------- | ----- | -------------------------------- | ------- | ---------------------------------------------- |
+| `inline`        |       | `boolean`                        | `false` | Size the element to the width of its children. |
+| `margin`        | `m`   | `string` or `number` or `object` |         | Margin on all sides.                           |
+| `marginY`       | `my`  | `string` or `number` or `object` |         | Margin on the top and bottom.                  |
+| `marginX`       | `mx`  | `string` or `number` or `object` |         | Margin on the left and right.                  |
+| `marginTop`     | `mt`  | `string` or `number` or `object` |         | Margin on the left and right.                  |
+| `marginRight`   | `mr`  | `string` or `number` or `object` |         | Margin on the right.                           |
+| `marginBottom`  | `mb`  | `string` or `number` or `object` |         | Margin on the bottom.                          |
+| `marginLeft`    | `ml`  | `string` or `number` or `object` |         | Margin on the left.                            |
+| `padding`       | `p`   | `string` or `number` or `object` |         | Padding on all sides.                          |
+| `paddingY`      | `py`  | `string` or `number` or `object` |         | Padding on the top and bottom.                 |
+| `paddingX`      | `px`  | `string` or `number` or `object` |         | Padding on the left and right.                 |
+| `paddingTop`    | `pt`  | `string` or `number` or `object` |         | Padding on the left and right.                 |
+| `paddingRight`  | `pr`  | `string` or `number` or `object` |         | Padding on the right.                          |
+| `paddingBottom` | `pb`  | `string` or `number` or `object` |         | Padding on the bottom.                         |
+| `paddingLeft`   | `pl`  | `string` or `number` or `object` |         | Padding on the left.                           |
+
+### Margin mixin factories
+
+Factory functions to create mixins for margin:
+
+- `createMargin(map, spacings)`
+- `createMarginY(map, spacings)`
+- `createMarginX(map, spacings)`
+- `createMarginTop(map, spacings)`
+- `createMarginRight(map, spacings)`
+- `createMarginBottom(map, spacings)`
+- `createMarginLeft(map, spacings)`
+
+> Where `map` is function created by `createMap` from `styled-components-breakpoint`.
+
+> Where `spacings` is a map of spacings.
+
+### Padding mixin factories
+
+Factory functions to create mixins for padding:
+
+- `createPadding(map, spacings)`
+- `createPaddingY(map, spacings)`
+- `createPaddingX(map, spacings)`
+- `createPaddingTop(map, spacings)`
+- `createPaddingRight(map, spacings)`
+- `createPaddingBottom(map, spacings)`
+- `createPaddingLeft(map, spacings)`
+
+> Where `map` is function created by `createMap` from `styled-components-breakpoint`.
+
+> Where `spacings` is a map of spacings.
+
+## Default spacings
+
+If you don't provide any spacings, the default spacings used by the mixins and components are:
+
+| Name | Value     |
+| ---- | --------- |
+| `0`  | `0`       |
+| `1`  | `0.25rem` |
+| `2`  | `0.5rem`  |
+| `3`  | `1rem`    |
+| `4`  | `2rem`    |
+| `5`  | `4rem`    |
+| `6`  | `8rem`    |

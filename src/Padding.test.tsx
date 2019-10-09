@@ -3,7 +3,7 @@ import React from 'react';
 import { render } from '@testing-library/react';
 import { Padding } from './components';
 
-describe('Padding', () => {
+describe('<Padding/>', () => {
   it('it should have no styles when no props are passed', () => {
     const { container } = render(<Padding />);
     expect(container.firstChild).toMatchSnapshot();

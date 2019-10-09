@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { ThemeProvider, DefaultTheme } from 'styled-components';
-import { Spacing, MarginProps, PaddingProps } from '../../../src';
+import { Spacing, ThemedMarginProps, ThemedPaddingProps } from '../../../src';
 import {
   GlobalStyle,
   MarginOuter,
@@ -33,7 +33,7 @@ type Values =
   | ValueOrValueMap<DefaultBreakpointName, DefaultSpacingName>
   | ValueOrValueMap<DefaultBreakpointName, CustomSpacingName>;
 
-const WrappedMargin = (props: { prop: keyof MarginProps; values: Values; children: React.ReactNode }) => {
+const WrappedMargin = (props: { prop: keyof ThemedMarginProps; values: Values; children: React.ReactNode }) => {
   const spacing = { [props.prop]: props.values };
   return (
     <MarginOuter>
@@ -47,7 +47,7 @@ const WrappedMargin = (props: { prop: keyof MarginProps; values: Values; childre
   );
 };
 
-const WrappedPadding = (props: { prop: keyof PaddingProps; values: Values; children: React.ReactNode }) => {
+const WrappedPadding = (props: { prop: keyof ThemedPaddingProps; values: Values; children: React.ReactNode }) => {
   const spacing = { [props.prop]: props.values };
   return (
     <PaddingOuter>

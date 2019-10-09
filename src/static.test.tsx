@@ -1,27 +1,77 @@
 import 'jest-styled-components';
-import React from 'react';
 import { render } from '@testing-library/react';
-import { Spacing } from './components';
+import React from 'react';
+import styled from 'styled-components';
+import { createMap, defaults as defaultBreakpoints, DefaultBreakpointName } from 'styled-components-breakpoint';
+import { defaults as defaultSpacings } from './defaults';
+import {
+  createMargin,
+  createMarginY,
+  createMarginX,
+  createMarginTop,
+  createMarginRight,
+  createMarginBottom,
+  createMarginLeft,
+  MarginProps,
+  createMarginProps,
+  createPadding,
+  createPaddingY,
+  createPaddingX,
+  createPaddingTop,
+  createPaddingRight,
+  createPaddingBottom,
+  createPaddingLeft,
+  PaddingProps,
+  createPaddingProps
+} from './static';
+import { DefaultSpacingName } from './types';
 
-describe('<Spacing/>', () => {
-  it('it should have no styles when no props are passed', () => {
-    const { container } = render(<Spacing />);
-    expect(container.firstChild).toMatchSnapshot();
-  });
+const map = createMap(defaultBreakpoints);
 
-  describe('inline', () => {
-    it('it should be set when the prop is true', () => {
-      const { container } = render(<Spacing inline={true} />);
-      expect(container.firstChild).toMatchSnapshot();
-      expect(container.firstChild).toHaveStyleRule('display', 'inline-block');
-    });
+const margin = createMargin(map, defaultSpacings);
+const marginY = createMarginY(map, defaultSpacings);
+const marginX = createMarginX(map, defaultSpacings);
+const marginTop = createMarginTop(map, defaultSpacings);
+const marginRight = createMarginRight(map, defaultSpacings);
+const marginBottom = createMarginBottom(map, defaultSpacings);
+const marginLeft = createMarginLeft(map, defaultSpacings);
 
-    it('it should not be set when the prop is false', () => {
-      const { container } = render(<Spacing inline={false} />);
-      expect(container.firstChild).not.toHaveStyleRule('display', 'inline-block');
-    });
-  });
+const padding = createPadding(map, defaultSpacings);
+const paddingY = createPaddingY(map, defaultSpacings);
+const paddingX = createPaddingX(map, defaultSpacings);
+const paddingTop = createPaddingTop(map, defaultSpacings);
+const paddingRight = createPaddingRight(map, defaultSpacings);
+const paddingBottom = createPaddingBottom(map, defaultSpacings);
+const paddingLeft = createPaddingLeft(map, defaultSpacings);
 
+const marginProps = createMarginProps({
+  margin,
+  marginY,
+  marginX,
+  marginTop,
+  marginRight,
+  marginBottom,
+  marginLeft
+});
+
+const paddingProps = createPaddingProps({
+  padding,
+  paddingY,
+  paddingX,
+  paddingTop,
+  paddingRight,
+  paddingBottom,
+  paddingLeft
+});
+
+const Spacing = styled.div<
+  MarginProps<DefaultBreakpointName, DefaultSpacingName> & PaddingProps<DefaultBreakpointName, DefaultSpacingName>
+>`
+  ${marginProps}
+  ${paddingProps}
+`;
+
+describe('static', () => {
   describe('margin', () => {
     it('it should have a single margin for all breakpoints when the prop is passed', () => {
       const { container } = render(<Spacing margin={1} />);
