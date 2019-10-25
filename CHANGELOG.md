@@ -10,7 +10,7 @@
 
 - Increased the supported version range for `styled-components` to support `v4`
 - added aliases for the longer form of the mixin names e.g. for there `mt` you can also use `marginTop` now
-- added `marginProps` and `paddingProps` methods for creating `Box`-like components
+- added `margin` and `padding` methods for creating `Box`-like components
 - added `createMarginTop`, `createPaddingTop` and similar factories for creating mixins when using the `createMap` functions
 - Added a license file
 

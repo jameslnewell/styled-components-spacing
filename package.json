@@ -1,6 +1,6 @@
 {
   "name": "styled-components-spacing",
-  "version": "4.0.0-preview.3",
+  "version": "4.0.0-preview.4",
   "description": "Responsive margin and padding utilities for `styled-components`💅.",
   "keywords": [
     "react",
@@ -21,7 +21,7 @@
   "module": "dist/index.m.js",
   "types": "dist/index.d.ts",
   "dependencies": {
-    "styled-components-breakpoint": "^3.0.0-preview.14"
+    "styled-components-breakpoint": "^3.0.0-preview.19"
   },
   "peerDependencies": {
     "@types/styled-components": "^4.1.19",
@@ -29,7 +29,7 @@
   },
   "devDependencies": {
     "@jameslnewell/editor-config": "^1.0.1",
-    "@jameslnewell/eslint-config": "^0.12.0",
+    "@jameslnewell/eslint-config": "^0.13.5",
     "@jameslnewell/jest-preset-test": "^4.0.0",
     "@jameslnewell/prettier-config": "^1.0.1",
     "@jameslnewell/typescript-config": "^3.0.0",
@@ -56,7 +56,7 @@
   },
   "scripts": {
     "clean": "rm -rf dist .cache .rts2_cache* example/dist example.cache",
-    "check:linting": "eslint --fix --ext .ts,.js,.jsx src",
+    "check:linting": "eslint --fix --ext .ts,.tsx,.js,.jsx src",
     "check:types": "tsc --noEmit --project tsconfig.json && tsc --noEmit --project example/tsconfig.json",
     "check": "yarn run check:linting && yarn run check:types",
     "build:bundle": "microbundle build -f es,cjs --tsconfig tsconfig.build.json",

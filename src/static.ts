@@ -1,15 +1,21 @@
-import { css } from 'styled-components';
-import { BreakpointNameConstraint, ValueOrValueMap, MapFunction } from 'styled-components-breakpoint';
-import { SpacingNameConstraint, SpacingMap } from './types';
-import { mapSpacingToStyle } from './mapSpacingToStyle';
+import {css} from 'styled-components';
+import {
+  BreakpointNameConstraint,
+  ValueOrValueMap,
+  StaticMapFunction,
+} from 'styled-components-breakpoint';
+import {SpacingNameConstraint, SpacingMap} from './types';
+import {mapSpacingToStyle} from './mapSpacingToStyle';
 
 const createMixin = (properties: string[]) => {
   return <B extends BreakpointNameConstraint, S extends SpacingNameConstraint>(
-    map: MapFunction<B, S>,
-    spacings: SpacingMap<S>
+    map: StaticMapFunction<B>,
+    spacings: SpacingMap<S>,
   ) => {
     return (value: ValueOrValueMap<B, S>) => {
-      return map(value, spacing => mapSpacingToStyle<S>(properties, spacings, spacing));
+      return map(value, spacing =>
+        mapSpacingToStyle<S>(properties, spacings, spacing),
+      );
     };
   };
 };
@@ -30,11 +36,17 @@ export const createPaddingRight = createMixin(['paddingRight']);
 export const createPaddingTop = createMixin(['paddingTop']);
 export const createPaddingBottom = createMixin(['paddingBottom']);
 
-interface MixinFunction<B extends BreakpointNameConstraint, S extends SpacingNameConstraint> {
-  (value: ValueOrValueMap<B, S>): ReturnType<MapFunction<B, S>>;
+interface MixinFunction<
+  B extends BreakpointNameConstraint,
+  S extends SpacingNameConstraint
+> {
+  (value: ValueOrValueMap<B, S>): ReturnType<StaticMapFunction<B>>;
 }
 
-interface CreateMarginOptions<B extends BreakpointNameConstraint, S extends SpacingNameConstraint> {
+interface CreateMarginOptions<
+  B extends BreakpointNameConstraint,
+  S extends SpacingNameConstraint
+> {
   margin: MixinFunction<B, S>;
   marginX: MixinFunction<B, S>;
   marginY: MixinFunction<B, S>;
@@ -44,7 +56,10 @@ interface CreateMarginOptions<B extends BreakpointNameConstraint, S extends Spac
   marginLeft: MixinFunction<B, S>;
 }
 
-export interface MarginProps<B extends BreakpointNameConstraint, S extends SpacingNameConstraint> {
+export interface MarginProps<
+  B extends BreakpointNameConstraint,
+  S extends SpacingNameConstraint
+> {
   m?: ValueOrValueMap<B, S>;
   mx?: ValueOrValueMap<B, S>;
   my?: ValueOrValueMap<B, S>;
@@ -61,18 +76,41 @@ export interface MarginProps<B extends BreakpointNameConstraint, S extends Spaci
   marginLeft?: ValueOrValueMap<B, S>;
 }
 
-export const createMarginProps = <B extends BreakpointNameConstraint, S extends SpacingNameConstraint>({
+export const createMarginProps = <
+  B extends BreakpointNameConstraint,
+  S extends SpacingNameConstraint
+>({
   margin,
   marginX,
   marginY,
   marginTop,
   marginRight,
   marginBottom,
-  marginLeft
-}: CreateMarginOptions<B, S>) => (props: MarginProps<B, S>): ReturnType<typeof css> => css`
-  ${props.m !== undefined ? margin(props.m) : props.margin !== undefined ? margin(props.margin) : undefined}
-  ${props.mx !== undefined ? marginX(props.mx) : props.marginX !== undefined ? marginX(props.marginX) : undefined}
-  ${props.my !== undefined ? marginY(props.my) : props.marginY !== undefined ? marginY(props.marginY) : undefined}
+  marginLeft,
+}: CreateMarginOptions<B, S>) => (
+  props: MarginProps<B, S>,
+): ReturnType<typeof css> => css`
+  ${
+    props.m !== undefined
+      ? margin(props.m)
+      : props.margin !== undefined
+      ? margin(props.margin)
+      : undefined
+  }
+  ${
+    props.mx !== undefined
+      ? marginX(props.mx)
+      : props.marginX !== undefined
+      ? marginX(props.marginX)
+      : undefined
+  }
+  ${
+    props.my !== undefined
+      ? marginY(props.my)
+      : props.marginY !== undefined
+      ? marginY(props.marginY)
+      : undefined
+  }
   ${
     props.mt !== undefined
       ? marginTop(props.mt)
@@ -103,7 +141,10 @@ export const createMarginProps = <B extends BreakpointNameConstraint, S extends 
   }
 `;
 
-interface CreatePaddingOptions<B extends BreakpointNameConstraint, S extends SpacingNameConstraint> {
+interface CreatePaddingOptions<
+  B extends BreakpointNameConstraint,
+  S extends SpacingNameConstraint
+> {
   padding: MixinFunction<B, S>;
   paddingX: MixinFunction<B, S>;
   paddingY: MixinFunction<B, S>;
@@ -113,7 +154,10 @@ interface CreatePaddingOptions<B extends BreakpointNameConstraint, S extends Spa
   paddingLeft: MixinFunction<B, S>;
 }
 
-export interface PaddingProps<B extends BreakpointNameConstraint, S extends SpacingNameConstraint> {
+export interface PaddingProps<
+  B extends BreakpointNameConstraint,
+  S extends SpacingNameConstraint
+> {
   p?: ValueOrValueMap<B, S>;
   px?: ValueOrValueMap<B, S>;
   py?: ValueOrValueMap<B, S>;
@@ -130,18 +174,41 @@ export interface PaddingProps<B extends BreakpointNameConstraint, S extends Spac
   paddingLeft?: ValueOrValueMap<B, S>;
 }
 
-export const createPaddingProps = <B extends BreakpointNameConstraint, S extends SpacingNameConstraint>({
+export const createPaddingProps = <
+  B extends BreakpointNameConstraint,
+  S extends SpacingNameConstraint
+>({
   padding,
   paddingX,
   paddingY,
   paddingTop,
   paddingRight,
   paddingBottom,
-  paddingLeft
-}: CreatePaddingOptions<B, S>) => (props: PaddingProps<B, S>): ReturnType<typeof css> => css`
-  ${props.p !== undefined ? padding(props.p) : props.padding !== undefined ? padding(props.padding) : undefined}
-  ${props.px !== undefined ? paddingX(props.px) : props.paddingX !== undefined ? paddingX(props.paddingX) : undefined}
-  ${props.py !== undefined ? paddingY(props.py) : props.paddingY !== undefined ? paddingY(props.paddingY) : undefined}
+  paddingLeft,
+}: CreatePaddingOptions<B, S>) => (
+  props: PaddingProps<B, S>,
+): ReturnType<typeof css> => css`
+  ${
+    props.p !== undefined
+      ? padding(props.p)
+      : props.padding !== undefined
+      ? padding(props.padding)
+      : undefined
+  }
+  ${
+    props.px !== undefined
+      ? paddingX(props.px)
+      : props.paddingX !== undefined
+      ? paddingX(props.paddingX)
+      : undefined
+  }
+  ${
+    props.py !== undefined
+      ? paddingY(props.py)
+      : props.paddingY !== undefined
+      ? paddingY(props.paddingY)
+      : undefined
+  }
   ${
     props.pt !== undefined
       ? paddingTop(props.pt)
