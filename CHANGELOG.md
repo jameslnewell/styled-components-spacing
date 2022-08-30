@@ -1,5 +1,9 @@
 ## Change log
 
+### 3.2.0
+
+- Updates styled-components peer dependency to support version <= 5
+
 ### 3.1.2
 
 - fix docs to reflect removed property ([#13](https://github.com/jameslnewell/styled-components-spacing/pull/13))
